@@ -1,0 +1,1884 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>DPDP Compliance Hub — Mohd Faiz | Data Privacy & AI Governance</title>
+<meta name="description" content="Comprehensive DPDP Act 2023 and Rules 2025 compliance management suite for Data Fiduciaries. Developed by Mohd Faiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Noto+Sans+Telugu:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ─── Premium Modern Design System ───────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:          #f8fafc;
+  --surface:     #ffffff;
+  --surface-2:   #f1f5f9;
+  --surface-3:   #e2e8f0;
+  --bd:          #e2e8f0;
+  --bd-hover:    #cbd5e1;
+  --bd-focus:    #0f172a;
+  
+  --t1:          #0f172a;
+  --t2:          #334155;
+  --t3:          #64748b;
+  --t4:          #94a3b8;
+
+  --primary:     #0f172a;
+  --primary-ink: #ffffff;
+  --primary-h:   #1e293b;
+
+  --blue:        #2563eb;
+  --blue-bg:     rgba(37,99,235,.06);
+  --blue-border: rgba(37,99,235,.2);
+
+  --emerald:     #059669;
+  --emerald-bg:  rgba(5,150,105,.07);
+  --emerald-bd:  rgba(5,150,105,.2);
+
+  --amber:       #d97706;
+  --amber-bg:    rgba(217,119,6,.07);
+  --amber-bd:    rgba(217,119,6,.2);
+
+  --rose:        #e11d48;
+  --rose-bg:     rgba(225,29,72,.07);
+  --rose-bd:     rgba(225,29,72,.2);
+
+  --ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --serif: 'Newsreader', Georgia, Cambria, 'Times New Roman', serif;
+  --mono:        'JetBrains Mono', monospace;
+  --te:          "Noto Sans Telugu", "Nirmala UI", sans-serif;
+
+  --shadow-sm:   0 1px 2px 0 rgba(0,0,0,0.03);
+  --shadow:      0 1px 3px 0 rgba(0,0,0,0.04), 0 1px 2px -1px rgba(0,0,0,0.03);
+  --shadow-md:   0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.03);
+  
+  --r:           6px;
+  --r2:          10px;
+}
+
+[data-theme="dark"]{
+  --bg:          #0b0f17;
+  --surface:     #111827;
+  --surface-2:   #1a2234;
+  --surface-3:   #243048;
+  --bd:          #1f293d;
+  --bd-hover:    #334155;
+  --bd-focus:    #f8fafc;
+
+  --t1:          #f8fafc;
+  --t2:          #cbd5e1;
+  --t3:          #7e8ea6;
+  --t4:          #475569;
+
+  --primary:     #f8fafc;
+  --primary-ink: #0f172a;
+  --primary-h:   #e2e8f0;
+
+  --blue:        #3b82f6;
+  --blue-bg:     rgba(59,130,246,.1);
+  --blue-border: rgba(59,130,246,.25);
+
+  --emerald:     #10b981;
+  --emerald-bg:  rgba(16,185,129,.1);
+  --emerald-bd:  rgba(16,185,129,.25);
+
+  --amber:       #f59e0b;
+  --amber-bg:    rgba(245,158,11,.1);
+  --amber-bd:    rgba(245,158,11,.25);
+
+  --rose:        #f43f5e;
+  --rose-bg:     rgba(244,63,94,.1);
+  --rose-bd:     rgba(244,63,94,.25);
+
+  --shadow-sm:   0 1px 2px 0 rgba(0,0,0,0.3);
+  --shadow:      0 1px 3px 0 rgba(0,0,0,0.4);
+  --shadow-md:   0 4px 12px rgba(0,0,0,0.5);
+}
+
+html,body{
+  background:var(--bg);color:var(--t1);font-family:var(--ui);
+  font-size:13.5px;line-height:1.55;-webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  letter-spacing:-0.011em;
+  font-feature-settings:'cv02','cv03','cv04','cv11';
+}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ─── Top Bar (Sticky Glass) ─────────────────────────── */
+.top{
+  position:sticky;top:0;z-index:40;
+  display:flex;align-items:center;justify-content:space-between;
+  background:var(--surface);border-bottom:1px solid var(--bd);
+  padding:0 28px;height:58px;box-shadow:var(--shadow-sm);
+  transition:background .2s,border-color .2s;
+}
+.brand{display:flex;align-items:center;gap:12px;cursor:pointer}
+.brand-mark{
+  width:32px;height:32px;background:var(--primary);color:var(--primary-ink);
+  border-radius:var(--r);display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:-.02em;
+  box-shadow:var(--shadow-sm);
+}
+.brand-title{font-size:14px;font-weight:700;color:var(--t1);letter-spacing:-.015em}
+.brand-sub{
+  font-size:11.5px;color:var(--t3);margin-left:8px;padding-left:10px;
+  border-left:1px solid var(--bd);font-weight:500;
+}
+@media(max-width:680px){.brand-sub{display:none}}
+
+.top-actions{display:flex;align-items:center;gap:10px}
+.icon-btn{
+  width:34px;height:34px;background:var(--surface);border:1px solid var(--bd);
+  border-radius:var(--r);cursor:pointer;display:flex;align-items:center;justify-content:center;
+  color:var(--t3);transition:all .15s;box-shadow:var(--shadow-sm);
+}
+.icon-btn:hover{background:var(--surface-2);color:var(--t1);border-color:var(--bd-hover)}
+.icon-btn svg{width:15px;height:15px}
+
+#breachBtn{
+  font-family:inherit;font-size:12.5px;font-weight:600;
+  border-radius:var(--r);padding:6px 14px;
+  border:1px solid var(--rose-bd);background:var(--rose-bg);color:var(--rose);
+  cursor:pointer;display:flex;align-items:center;gap:7px;transition:all .15s;
+}
+#breachBtn:hover{background:var(--rose);color:#ffffff}
+#breachBtn.live{background:var(--rose);color:#ffffff;animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.7}}
+#menuBtn{display:none}
+
+/* ─── Shell & Navigation Rail ────────────────────────── */
+.shell{display:grid;grid-template-columns:240px minmax(0,1fr);max-width:1280px;margin:0 auto}
+#nav{
+  position:sticky;top:58px;align-self:start;
+  display:flex;flex-direction:column;gap:3px;
+  padding:24px 14px;height:calc(100vh - 58px);overflow-y:auto;
+  border-right:1px solid var(--bd);
+}
+.nav-section-title{
+  font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--t4);padding:14px 12px 6px;user-select:none;
+}
+#nav button{
+  font:inherit;font-size:13px;font-weight:500;text-align:left;
+  background:transparent;border:none;border-radius:var(--r);
+  padding:8px 12px;color:var(--t2);cursor:pointer;
+  display:flex;align-items:center;gap:9px;
+  transition:all .15s;
+}
+#nav button svg{width:15px;height:15px;color:var(--t3);flex-shrink:0;transition:color .15s}
+#nav button:hover{background:var(--surface-2);color:var(--t1)}
+#nav button:hover svg{color:var(--t1)}
+#nav button[aria-current=page]{
+  background:var(--surface-2);color:var(--primary);
+  font-weight:600;box-shadow:var(--shadow-sm);
+}
+#nav button[aria-current=page] svg{color:var(--primary)}
+
+#main{
+  padding:36px 44px 80px;display:flex;flex-direction:column;gap:24px;
+  min-width:0;outline:none;
+}
+@media(max-width:880px){
+  .shell{grid-template-columns:1fr}
+  #menuBtn{display:flex}
+  #nav{
+    position:fixed;z-index:45;top:58px;left:0;bottom:0;
+    width:260px;background:var(--surface);box-shadow:var(--shadow-md);
+    transform:translateX(-105%);transition:transform .2s ease;
+  }
+  body.navopen #nav{transform:none}
+  #main{padding:24px 20px 48px}
+}
+
+/* ─── Typography & Editorial Styles ──────────────────── */
+.pagehead{margin-bottom:4px}
+.pagehead h1{font-size:24px;font-weight:800;letter-spacing:-.03em;color:var(--t1);margin-bottom:6px}
+.lede{color:var(--t3);font-size:14px;max-width:76ch;line-height:1.6}
+
+/* ─── Cards & Modules ────────────────────────────────── */
+.card{
+  background:var(--surface);border:1px solid var(--bd);
+  border-radius:var(--r2);padding:24px 26px;min-width:0;
+  box-shadow:var(--shadow);transition:border-color .2s;
+}
+.card h2{font-size:15px;font-weight:700;margin:0 0 14px;color:var(--t1);letter-spacing:-.015em}
+.cardhead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.cardhead h2{margin:0}
+
+.cards3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media(max-width:760px){.cards3{grid-template-columns:1fr}}
+
+.stat{display:flex;flex-direction:column;gap:4px;padding:22px}
+.stat.inline{flex-direction:row;align-items:center;gap:16px;padding:16px 20px}
+.stat.inline .bar{flex:1}
+.lab{font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--t3)}
+.big{font-size:32px;font-weight:800;color:var(--t1);font-family:var(--mono);line-height:1.1;letter-spacing:-.03em}
+.bad{color:var(--rose)}
+.bar{height:5px;background:var(--surface-3);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--primary);transition:width .4s}
+.hint{font-size:12px;color:var(--t3)}
+
+/* ─── Buttons ────────────────────────────────────────── */
+.btn{
+  font:inherit;font-size:13px;font-weight:600;
+  border-radius:var(--r);padding:8px 16px;cursor:pointer;
+  border:1px solid transparent;background:var(--primary);color:var(--primary-ink);
+  display:inline-flex;align-items:center;gap:6px;text-decoration:none;
+  box-shadow:var(--shadow-sm);transition:all .15s;
+}
+.btn:hover{background:var(--primary-h);opacity:.95}
+.btn.ghost{background:var(--surface);border-color:var(--bd);color:var(--t1)}
+.btn.ghost:hover{background:var(--surface-2);border-color:var(--bd-hover)}
+.btn.sm{font-size:12px;padding:5px 12px}
+.btn.danger{border-color:var(--rose);background:var(--rose);color:#ffffff}
+.btn.danger.ghost{background:var(--surface);color:var(--rose);border-color:var(--rose-bd)}
+.btn.danger.ghost:hover{background:var(--rose-bg)}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.btnrow.end{justify-content:flex-end}
+.link{font:inherit;background:none;border:0;padding:0;color:var(--blue);cursor:pointer;text-align:left;text-decoration:underline;text-underline-offset:3px}
+.back{text-decoration:none;font-size:13px;color:var(--t3);margin-bottom:12px;display:inline-flex;align-items:center;gap:4px;font-weight:500}
+.back:hover{color:var(--t1)}
+
+/* ─── Form Inputs ────────────────────────────────────── */
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 20px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 16px}
+@media(max-width:760px){.grid2,.grid3{grid-template-columns:1fr}}
+
+label.f{display:flex;flex-direction:column;gap:6px;font-size:12.5px;font-weight:600;color:var(--t2);min-width:0}
+label.f.inl{flex-direction:row;align-items:center;gap:8px}
+label.f .hint{font-weight:400;margin-top:2px}
+input,select,textarea{
+  font:inherit;font-size:13.5px;color:var(--t1);background:var(--bg);
+  border:1px solid var(--bd);border-radius:var(--r);padding:8px 12px;
+  width:100%;min-width:0;outline:none;transition:border-color .15s,box-shadow .15s;
+}
+input:focus,select:focus,textarea:focus{
+  border-color:var(--bd-focus);
+  box-shadow:0 0 0 3px rgba(15,23,42,.06);
+}
+select{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 12px center;padding-right:32px;appearance:none;
+}
+textarea{resize:vertical}
+
+/* ─── Callouts ───────────────────────────────────────── */
+.tip{
+  background:var(--surface-2);border-radius:var(--r);padding:14px 18px;
+  font-size:13px;color:var(--t2);line-height:1.6;border-left:3px solid var(--t3);
+}
+.tip b{color:var(--t1)}
+.alert{
+  background:var(--rose-bg);border:1px solid var(--rose-bd);
+  border-radius:var(--r);padding:14px 18px;font-size:13px;color:var(--rose);
+  display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;
+}
+.start{margin:0 0 16px;padding-left:18px;display:flex;flex-direction:column;gap:8px;font-size:13.5px;color:var(--t2)}
+.start b{color:var(--t1)}
+
+/* ─── Lists & Tables ─────────────────────────────────── */
+.nextlist{list-style:none;padding:0;margin:0 0 8px}
+.nextlist li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--bd);flex-wrap:wrap;font-size:13px}
+.law{font-size:11px;color:var(--t3);font-family:var(--mono);line-height:1.4;white-space:normal;word-break:break-word;overflow-wrap:anywhere}
+.pill{font-size:11px;font-weight:600;border-radius:4px;padding:3px 8px;background:var(--surface-2);border:1px solid var(--bd);color:var(--t2);white-space:nowrap}
+.pill.c{background:var(--blue-bg);color:var(--blue);border-color:var(--blue-border)}
+.empty{color:var(--t3);font-style:italic;font-size:13px}
+
+/* Inventory Details */
+details.basis{margin-bottom:14px;font-size:13px}
+details.basis summary{cursor:pointer;color:var(--blue);font-weight:600}
+details.basis table{margin-top:10px}
+.invlist{display:flex;flex-direction:column;gap:10px}
+details.inv{border:1px solid var(--bd);border-radius:var(--r);padding:0 16px;background:var(--surface);box-shadow:var(--shadow-sm)}
+details.inv summary{cursor:pointer;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;padding:12px 0;list-style:none}
+details.inv summary::-webkit-details-marker{display:none}
+details.inv .it{font-weight:700;font-size:13.5px;color:var(--t1);flex:1 1 200px;min-width:0}
+details.inv .pu{font-size:12.5px;color:var(--t3);flex-basis:100%}
+details.inv[open]{padding-bottom:16px}
+
+/* Step-by-Step Items */
+details.step{border-top:1px solid var(--bd)}
+details.step summary{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:12px;align-items:center;padding:14px 0;cursor:pointer;list-style:none}
+details.step summary::-webkit-details-marker{display:none}
+.tick{width:19px;height:19px;border-radius:4px;border:1.5px solid var(--bd);display:grid;place-items:center;font-size:11px;font-weight:700;color:transparent;transition:all .15s}
+details.step.done .tick{background:var(--emerald);border-color:var(--emerald);color:#ffffff}
+details.step.done .st{color:var(--t3);text-decoration:line-through;text-decoration-color:var(--t4)}
+.st{font-weight:600;font-size:13.5px;color:var(--t1)}
+.stepbody{padding:0 0 18px 34px}
+.stepbody ol{margin:0 0 12px;padding-left:18px;display:flex;flex-direction:column;gap:6px;max-width:76ch;font-size:13px;color:var(--t2)}
+.donebox{margin-top:14px;background:var(--surface-2);border-radius:var(--r);padding:12px}
+@media(max-width:520px){details.step summary{grid-template-columns:22px minmax(0,1fr)}details.step .law{grid-column:2}.stepbody{padding-left:0}}
+
+/* Document Cards */
+.doclist{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.docbtn{
+  font:inherit;text-align:left;width:100%;height:100%;box-sizing:border-box;
+  display:flex;flex-direction:column;gap:8px;
+  background:var(--surface);border:1px solid var(--bd);border-radius:12px;
+  padding:18px 20px;cursor:pointer;color:var(--t1);box-shadow:var(--shadow-sm);
+  transition:all .15s cubic-bezier(0.16, 1, 0.3, 1);
+  min-width:0;overflow:hidden;
+}
+.docbtn:hover{border-color:var(--bd-focus);box-shadow:var(--shadow);transform:translateY(-2px)}
+.docbtn-header{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;width:100%}
+.docbtn b{font-size:14px;font-weight:700;color:var(--t1);line-height:1.4}
+.docbtn-arrow{color:var(--t4);font-size:14px;transition:transform .15s, color .15s;flex-shrink:0}
+.docbtn:hover .docbtn-arrow{color:var(--blue);transform:translateX(3px)}
+.docbtn span.when{font-size:12px;color:var(--t3);line-height:1.5;flex:1}
+.law-tag-wrap{margin-top:auto;padding-top:8px;width:100%}
+.docbtn .law{
+  font-size:11px;font-family:var(--mono);color:var(--t3);background:var(--surface-2);
+  border:1px solid var(--bd);border-radius:6px;padding:5px 9px;line-height:1.45;
+  white-space:normal !important;word-break:break-word !important;overflow-wrap:anywhere !important;
+  display:block;width:100%;box-sizing:border-box;
+}
+
+/* ─── Modern Document View & Navigation Tab ─── */
+.doc-nav-bar{
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;
+  gap:12px;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--bd);
+}
+.back-tab-btn{
+  display:inline-flex;align-items:center;gap:8px;font-family:var(--ui);
+  font-size:13px;font-weight:600;color:var(--t1);background:var(--surface);
+  border:1px solid var(--bd);border-radius:9999px;padding:7px 16px;cursor:pointer;
+  box-shadow:var(--shadow-sm);transition:all .15s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration:none;
+}
+.back-tab-btn:hover{
+  background:var(--surface-2);border-color:var(--bd-focus);transform:translateX(-2px);box-shadow:var(--shadow);
+}
+.back-tab-btn svg{color:var(--t3);transition:transform .15s, color .15s}
+.back-tab-btn:hover svg{color:var(--primary);transform:translateX(-2px)}
+.doc-nav-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.doc-group-badge{
+  font-size:11.5px;font-weight:600;color:var(--blue);background:var(--blue-bg);
+  border:1px solid var(--blue-border);padding:3px 10px;border-radius:9999px;
+}
+.doc-law-badge{
+  font-size:11px;font-family:var(--mono);color:var(--t3);background:var(--surface-2);
+  border:1px solid var(--bd);padding:3px 10px;border-radius:9999px;max-width:380px;
+  white-space:normal;line-height:1.4;word-break:break-word;
+}
+
+/* Document Paper Preview */
+.docbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;position:sticky;top:58px;z-index:15;background:var(--bg);padding:12px 0}
+.paper{
+  background:#ffffff;color:#0f172a;border:1px solid #cbd5e1;
+  border-radius:var(--r);box-shadow:var(--shadow-md);
+  padding:clamp(28px,5.5vw,60px);max-width:840px;width:100%;
+  font-size:13.5px;line-height:1.75;overflow-x:auto;
+  letter-spacing:-0.005em;
+}
+[data-theme="dark"] .paper{background:#111827;color:#f1f5f9;border-color:#334155}
+.paper.wide{max-width:none}
+.paper.te,.paper .te{font-family:var(--te)}
+.paper h1{font-size:22px;font-weight:800;margin:6px 0 8px;color:#0f172a;letter-spacing:-.02em}
+[data-theme="dark"] .paper h1{color:#f8fafc}
+.paper h2{font-size:15px;font-weight:700;margin:22px 0 8px;border-bottom:1px solid #e2e8f0;padding-bottom:5px;color:#0f172a}
+[data-theme="dark"] .paper h2{border-bottom-color:#1e293b;color:#f8fafc}
+.paper h3{font-size:13.5px;font-weight:700;margin:16px 0 6px}
+.paper table{border-collapse:collapse;width:100%;margin:10px 0 16px;font-size:12.5px}
+.paper td,.paper th{border:1px solid #cbd5e1;padding:7px 10px;text-align:left;vertical-align:top}
+[data-theme="dark"] .paper td,[data-theme="dark"] .paper th{border-color:#334155}
+.paper th{background:#f8fafc;font-weight:700}
+[data-theme="dark"] .paper th{background:#1e293b}
+.paper mark{background:#fef08a;color:#0f172a;padding:0 3px;border-radius:2px}
+.paper .kicker{font-size:10.5px;letter-spacing:.12em;font-weight:700;text-transform:uppercase;color:var(--t3)}
+.paper .dmeta,.paper .ref,.paper .dfoot{color:#64748b;font-size:12px}
+.paper .dlaw{color:#475569;font-size:12px;font-family:var(--mono);border-bottom:2px solid #0f172a;padding-bottom:8px;margin-bottom:18px}
+[data-theme="dark"] .paper .dlaw{border-bottom-color:#94a3b8;color:#94a3b8}
+.paper .dnote{background:#f8fafc;border-left:3px solid var(--primary);padding:12px 16px;margin:12px 0;font-size:13px;border-radius:0 var(--r) var(--r) 0}
+[data-theme="dark"] .paper .dnote{background:#1e293b}
+.paper ul.cb{list-style:none;padding-left:0}
+.paper ul.cb li{padding:4px 0}
+.paper .fill{display:flex;gap:8px;align-items:flex-end;margin:14px 0}
+.paper .line{flex:1;border-bottom:1px solid #64748b;min-width:60px;display:inline-block;height:1em}
+.paper .sign{margin-top:32px}
+.paper .sign .line{width:240px;max-width:100%}
+.paper .pb{border-top:1px dashed #cbd5e1;margin:28px 0}
+.paper .dfoot{border-top:1px solid #e2e8f0;margin-top:32px;padding-top:12px}
+[data-theme="dark"] .paper .dfoot{border-top-color:#1e293b}
+
+/* Registers & Tables */
+.tabs{display:flex;gap:4px;overflow-x:auto;border-bottom:1px solid var(--bd);padding-bottom:0}
+.tabs button{font:inherit;font-size:13px;font-weight:600;white-space:nowrap;background:none;border:0;border-bottom:2px solid transparent;padding:10px 14px;color:var(--t3);cursor:pointer;transition:all .15s}
+.tabs button:hover{color:var(--t1)}
+.tabs button[aria-selected=true]{color:var(--primary);border-bottom-color:var(--primary)}
+.cnt{font-size:11px;background:var(--surface-2);border-radius:10px;padding:2px 7px;margin-left:4px;font-family:var(--mono)}
+.tw{overflow-x:auto}
+table.reg{border-collapse:collapse;width:100%;font-size:13px}
+table.reg th,table.reg td{border-bottom:1px solid var(--bd);padding:10px 12px;text-align:left;vertical-align:top}
+table.reg thead th{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--t3);font-weight:700}
+table.reg tbody th{font-weight:600;color:var(--t1);width:32%}
+table.reg tr.late td{background:var(--rose-bg)}
+table.reg input[type=date]{padding:5px 8px;font-size:12.5px}
+.nowrap{white-space:nowrap}
+.mono2{font-family:var(--mono);font-size:12px;font-weight:600;white-space:nowrap}
+.pre{white-space:pre-wrap;font-family:var(--mono);font-size:12.5px;background:var(--bg);border:1px solid var(--bd);border-radius:var(--r);padding:14px 16px;margin:0;user-select:text;line-height:1.65}
+
+/* Breach Mode */
+.clock{display:flex;flex-direction:column;gap:4px;background:var(--rose-bg);border:1px solid var(--rose-bd);border-radius:var(--r);padding:16px 20px}
+.clock .big{font-size:clamp(20px,4.5vw,26px);color:var(--rose)}
+.bsteps{list-style:none;padding:0;margin:0 0 12px}
+.bsteps li{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:10px 0;border-top:1px solid var(--bd);font-size:13px}
+.bsteps label{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.bsteps input{flex:none;width:17px;height:17px;padding:0;margin-top:2px;accent-color:var(--rose)}
+
+/* Credit & Author Box */
+.credit-card{
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;
+  gap:16px 24px;background:var(--surface);border:1px solid var(--bd);
+  border-radius:14px;padding:18px 22px;margin-top:16px;
+  box-shadow:var(--shadow);transition:all .2s cubic-bezier(0.16, 1, 0.3, 1);
+  position:relative;overflow:hidden;
+}
+.credit-card:hover{border-color:var(--bd-hover);box-shadow:var(--shadow-md)}
+.credit-card::before{content:"";position:absolute;top:0;left:0;bottom:0;width:3px;background:var(--primary);opacity:.85}
+.credit-main{display:flex;align-items:center;gap:16px;min-width:0}
+.credit-avatar{
+  position:relative;width:44px;height:44px;border-radius:11px;
+  background:var(--primary);color:var(--primary-ink);display:grid;place-items:center;
+  font-family:var(--mono);font-weight:800;font-size:13px;letter-spacing:-.02em;
+  flex-shrink:0;box-shadow:var(--shadow-sm);
+}
+.credit-status-dot{
+  position:absolute;bottom:-2px;right:-2px;width:10px;height:10px;
+  border-radius:50%;background:#10b981;border:2px solid var(--surface);
+}
+.credit-body{display:flex;flex-direction:column;gap:3px;min-width:0}
+.credit-header-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.credit-name{font-size:14.5px;font-weight:700;color:var(--t1);letter-spacing:-.015em;margin:0}
+.credit-role-tag{
+  font-size:11px;font-weight:600;color:var(--blue);background:var(--blue-bg);
+  border:1px solid var(--blue-border);padding:2px 8px;border-radius:9999px;
+}
+.credit-institution{font-size:12.5px;color:var(--t3);font-weight:500;margin:0}
+.credit-links{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:5px}
+.credit-link-chip{
+  display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;
+  color:var(--t2);background:var(--surface-2);border:1px solid var(--bd);
+  padding:4px 10px;border-radius:6px;text-decoration:none;transition:all .15s ease;
+}
+.credit-link-chip:hover{background:var(--surface-3);color:var(--t1);border-color:var(--bd-hover);text-decoration:none}
+.credit-link-chip svg{color:var(--t3);flex-shrink:0;transition:color .15s ease}
+.credit-link-chip:hover svg{color:var(--primary)}
+.credit-aside{display:flex;align-items:center}
+.credit-caption{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t4)}
+@media(max-width:680px){.credit-aside{display:none}}
+
+/* Footer */
+.foot{
+  border-top:1px solid var(--bd);padding:24px 0;
+  max-width:1280px;margin:0 auto;padding-left:max(28px,env(safe-area-inset-left,0px));padding-right:max(28px,env(safe-area-inset-right,0px));
+  color:var(--t3);font-size:12px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
+}
+
+#toast{
+  position:fixed;left:50%;transform:translateX(-50%);bottom:28px;
+  background:var(--t1);color:var(--bg);padding:10px 20px;border-radius:var(--r);
+  font-size:13px;font-weight:600;z-index:60;max-width:min(90vw,480px);
+  box-shadow:var(--shadow-md);
+}
+#printArea{display:none}
+@media print{
+  body.printing>*:not(#printArea){display:none!important}
+  body.printing #printArea{display:block;font-family:Calibri,Arial,sans-serif;color:#000}
+}
+
+/* ─── Ultra-Modern Aesthetic Enhancements ─── */
+:root {
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.03);
+  --shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 12px -2px rgba(0,0,0,0.04);
+  --shadow-md: 0 8px 24px -4px rgba(0,0,0,0.06), 0 2px 6px -1px rgba(0,0,0,0.02);
+  --r: 8px;
+  --r2: 14px;
+}
+
+[data-theme="dark"] {
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.4);
+  --shadow: 0 1px 3px rgba(0,0,0,0.4), 0 4px 14px -2px rgba(0,0,0,0.5);
+  --shadow-md: 0 8px 24px -4px rgba(0,0,0,0.6);
+}
+
+/* Glassmorphic Top Bar */
+.top {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--bd) !important;
+  height: 62px !important;
+}
+[data-theme="dark"] .top {
+  background: rgba(11, 15, 23, 0.85) !important;
+}
+
+.brand-mark {
+  background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%) !important;
+  border-radius: 9px !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.15);
+}
+[data-theme="dark"] .brand-mark {
+  background: linear-gradient(135deg, #f8fafc 0%, #cbd5e1 100%) !important;
+  color: #0f172a !important;
+}
+
+/* Modern Hero Header */
+.hero-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--blue);
+  background: var(--blue-bg);
+  border: 1px solid var(--blue-border);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  margin-bottom: 10px;
+}
+.hero-chip-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--blue);
+  box-shadow: 0 0 6px var(--blue);
+}
+
+/* Modern Stat Cards */
+.card.stat {
+  border-radius: 14px !important;
+  border: 1px solid var(--bd) !important;
+  box-shadow: var(--shadow) !important;
+  transition: all .2s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+.card.stat:hover {
+  transform: translateY(-2px);
+  border-color: var(--bd-hover) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+.stat-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.stat-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  background: var(--surface-2);
+  border: 1px solid var(--bd);
+  color: var(--t2);
+}
+.stat-badge.green {
+  background: var(--emerald-bg);
+  color: var(--emerald);
+  border-color: var(--emerald-bd);
+}
+.stat-badge.blue {
+  background: var(--blue-bg);
+  color: var(--blue);
+  border-color: var(--blue-border);
+}
+.card.stat .bar {
+  height: 6px !important;
+  border-radius: 9999px !important;
+  background: var(--surface-3) !important;
+  margin: 10px 0 6px !important;
+}
+.card.stat .bar i {
+  background: linear-gradient(90deg, #2563eb, #10b981) !important;
+  border-radius: 9999px;
+}
+
+/* Modern Card Polish */
+.card {
+  border-radius: 14px !important;
+  box-shadow: var(--shadow) !important;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.card:hover {
+  border-color: var(--bd-hover);
+}
+
+/* Modern Inputs Focus */
+input:focus, select:focus, textarea:focus {
+  border-color: var(--blue) !important;
+  box-shadow: 0 0 0 3px var(--blue-bg) !important;
+}
+
+/* Modern Button Polish */
+.btn {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  transition: all .15s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+#breachBtn {
+  border-radius: 9999px !important;
+  font-weight: 600 !important;
+}
+
+</style>
+</head>
+<body data-theme="light">
+
+<div class="top">
+  <div style="display:flex;align-items:center;gap:10px;">
+    <button class="icon-btn" id="menuBtn" type="button" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="brand" data-go="home">
+      <div class="brand-mark">DP</div>
+      <div>
+        <span class="brand-title">DPDP Compliance Hub</span>
+        <span class="brand-sub">The Digital Personal Data Protection Act, 2023</span>
+      </div>
+    </div>
+  </div>
+  <div class="top-actions">
+    <button class="icon-btn" id="themeBtn" onclick="toggleTheme()" title="Toggle dark/light mode">
+      <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+        <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </svg>
+    </button>
+    <button id="breachBtn" type="button">
+      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      Section 8(6) Breach
+    </button>
+  </div>
+</div>
+
+<div class="shell">
+  <nav id="nav" aria-label="Sections"></nav>
+  <main id="main" tabindex="-1"></main>
+</div>
+
+<div class="foot">
+  <div><strong>Mohd Faiz</strong> · Faculty of Law, University of Delhi · Data Privacy Law &amp; AI Governance</div>
+  <div id="creditFoot"></div>
+</div>
+
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<div id="printArea" class="paper"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
+<script>
+/* ─── DPDP Document Templates ─── */
+var DPDP_DOCS = (function () {
+const D = [];
+const add = (o) => D.push(o);
+
+/* ---------- Customer-facing ---------- */
+add({ id: "notice", group: "Customer-facing", title: "Privacy Notice", law: "Section 5, Section 6(3), Section 8(9), Sections 11–14 · Rules 3, 9, 14",
+  when: "Publish on your website or app at a fixed address, link it from every data collection form, and keep printed copies at physical counters.",
+  body: () => [
+  ["h2", "1. Who we are"],
+  ["p", "{co}, {addr} (“we”, “us”) determines the purpose and means of processing personal data, acting as the Data Fiduciary under Section 2(i) of the Digital Personal Data Protection Act, 2023. This notice explains what personal data we process, why, and how you can exercise your statutory rights. It is independent and self-contained."],
+  ["h2", "2. Personal data we process and lawful grounds"],
+  ["dyn", "noticeTable"],
+  ["p", "We process only the personal data necessary for these specified purposes per Section 6(1). We will not use your personal data for any secondary purpose without giving you a fresh notice and, where required, obtaining your consent."],
+  ["h2", "3. Consent and right of withdrawal"],
+  ["p", "Where processing is based on your consent under Section 6, you have the right under Section 6(4) to withdraw your consent at any time, with the ease of doing so being comparable to the ease with which consent was given:"],
+  ["ul", ["Email {email} with the subject “Withdraw consent”", "WhatsApp or SMS “STOP” to {ph}", "Fill the withdrawal form at our office or counter", "Online: {withdrawLink}"]],
+  ["p", "Upon withdrawal, pursuant to Section 6(6), we and our Data Processors will cease processing within a reasonable time, unless retention or processing is required or authorized under the Act or any other law. Withdrawal does not affect the legality of processing done prior to withdrawal."],
+  ["h2", "4. Engagement of Data Processors & Sharing"],
+  ["p", "We share personal data only with Data Processors engaged under valid contracts pursuant to Section 8(2), binding them to confidentiality and reasonable security safeguards:"],
+  ["dyn", "vendorList"],
+  ["p", "We also disclose personal data where required by law, court order or regulatory authority. We never sell your personal data."],
+  ["h2", "5. Retention and statutory erasure"],
+  ["p", "Under Section 8(7), we erase personal data upon withdrawal of consent or as soon as it is reasonable to assume that the specified purpose is no longer being served, whichever is earlier, unless retention is necessary for legal compliance."],
+  ["h2", "6. Reasonable security safeguards"],
+  ["p", "Pursuant to Section 8(4) and Section 8(5), we implement appropriate technical and organisational measures and reasonable security safeguards to protect personal data against personal data breaches (Section 2(u)). Failing to maintain reasonable safeguards attracts liabilities up to ₹250 Crore under The Schedule."],
+  ["h2", "7. Processing of children's data"],
+  ["p", "{childLine} Pursuant to Section 9(2) and 9(3), we do not undertake processing that causes detrimental effects to children, nor do we track or behaviorally monitor children or direct targeted advertising toward them."],
+  ["h2", "8. Statutory rights of Data Principals"],
+  ["ul", [
+    "**Right to access information:** Obtain a summary of personal data processed, processing activities, and identities of Data Fiduciaries/Processors with whom data was shared (Section 11).",
+    "**Right to correction and erasure:** Correction of inaccurate or misleading data, completion of incomplete data, updating, and erasure of personal data (Section 12).",
+    "**Right of grievance redressal:** Readily available grievance redressal mechanism regarding acts or omissions (Section 13).",
+    "**Right to nominate:** Nominate any individual to exercise rights in the event of death or incapacity (Section 14)."]],
+  ["h2", "9. Procedure to exercise rights or file grievances"],
+  ["p", "Submit your request {means}. To verify identity under Rule 14, please provide {ident}."],
+  ["p", "We will acknowledge your request promptly and provide our final response within **{days} days** pursuant to Rule 14."],
+  ["h2", "10. Complaint to the Data Protection Board of India"],
+  ["p", "If you are not satisfied with our response or if we fail to respond within the published timeframe, you may file a complaint with the Data Protection Board of India under Section 13(3) and Section 27(1)(b). The Act requires exhausting our internal grievance redressal mechanism first."],
+  ["h2", "11. Duties of Data Principals"],
+  ["p", "Under Section 15 of the Act, Data Principals must not impersonate another person, suppress material information, register false or frivolous grievances, or furnish unverifiable information when seeking correction or erasure."],
+  ["h2", "12. Designated Contact Person / DPO"],
+  ["p", "**{officer}**, {desig}\nEmail: {email}  ·  Phone: {ph}\nAddress: {addr}"],
+  ["h2", "13. Multilingual access"],
+  ["p", "This notice is provided in {langs}. You have the option to access this notice in English or any language specified in the Eighth Schedule to the Constitution of India (Section 5(3))."],
+  ["ref", "Last updated: {date} · Enacted under Act No. 22 of 2023"]] });
+
+add({ id: "webtext", group: "Customer-facing", title: "Website, Form and Counter Notice Snippets", law: "Rules 3(c), 9, 14(1)",
+  when: "Deploy micro-notices across website footers, app intake forms, WhatsApp bios, and physical counters.",
+  body: () => [
+  ["table", ["Deployment Location", "Statutory Text to Deploy"], [
+    ["Website footer", "Privacy Notice  ·  Manage Consent  ·  Grievance Redressal (Section 13): {email}"],
+    ["Below web intake form", "We process your personal data to [purpose] pursuant to Section 6 of the DPDP Act, 2023. Read our Privacy Notice at {link}. Grievances: {email}."],
+    ["Physical counter board", "Personal data collected here is protected under Section 8 of the DPDP Act, 2023. View our full Privacy Notice. Inquiries: {officer}, {ph}."],
+    ["Reply signature on data requests", "For inquiries regarding personal data processing under the DPDP Act, 2023, contact {officer}, {desig}, {email}, {ph}. (Rule 9)"],
+    ["WhatsApp Business Profile", "Official DPDP Privacy Notice: {link} · Data Requests: {email}"]]]] });
+
+add({ id: "consent", group: "Customer-facing", title: "Notice and Consent Form", law: "Section 5(1), Section 6(1)–(4), Section 6(10) · Rule 3",
+  when: "Use for every customer whose data is collected on the basis of consent. Keep signed copies in your Consent Register.",
+  body: () => [
+  ["p", "**{co}**  ·  {addr}  ·  {ph}"],
+  ["p", "Please review this notice prior to signing. Available in {langs}."],
+  ["h3", "Personal data collected"],
+  ["dyn", "dataItems"],
+  ["h3", "Primary processing for requested service"],
+  ["p", "You provide this personal data to enable us to fulfill the specific service you requested under Section 7(a):"],
+  ["dyn", "serviceList"],
+  ["h3", "Optional purposes requiring explicit affirmative consent"],
+  ["dyn", "consentRows"],
+  ["p", "Provision of the primary service is not conditional upon consent to optional purposes."],
+  ["h3", "Summary of statutory rights"],
+  ["p", "You may withdraw consent at any time (Section 6(4)) by emailing {email} or texting STOP to {ph}. You have the right to access summaries (Section 11), request correction or erasure (Section 12), nominate a representative (Section 14), and raise grievances (Section 13). We respond within {days} days. Full Privacy Notice: {link}. Contact: {officer}, {ph}, {email}."],
+  ["fill", ["Data Principal Name", "Mobile / Email", "Signature", "Date"]],
+  ["ref", "Office Record: Consent ID: ______  ·  Entered in Consent Register by: ______  ·  Notice Version: 1.0"]] });
+
+add({ id: "online", group: "Customer-facing", title: "Online and App Consent UX Specifications", law: "Section 6(1), Section 6(4), Section 6(10) · Rule 3(c)",
+  when: "Provide to engineering and design teams. Checkboxes must start unchecked. Form submission must succeed even if optional consents are omitted.",
+  body: () => [
+  ["table", ["UI Element", "Exact Text / Specification"], [
+    ["Notice above checkboxes", "We process your [name, mobile, email] to [provide requested service]. With your affirmative consent, we also process data for the optional purposes below. Full Privacy Notice: {link}. Withdraw consent anytime via account settings or by emailing {email}."],
+    ["Mandatory service checkbox", "☐ I agree to {co} processing my data to [provide requested service]."],
+    ["Optional purpose checkbox", "☐ Send offers and product updates via [SMS / WhatsApp / Email]."],
+    ["Language toggle", "Available in: English | తెలుగు | हिंदी (Section 5(3))"],
+    ["Confirmation toast/email", "Your consent was logged on [date/time] under Consent ID [ID]. Manage or withdraw anytime at [link]."],
+    ["Withdrawal UI", "Dedicated single-click buttons per purpose: “Withdraw Marketing Consent”, “Request Erasure”. Confirm instantly on screen."],
+    ["WhatsApp opt-in text", "{co}: May we send you updates on WhatsApp? We use only your mobile number. Reply YES to agree, STOP anytime to withdraw. Privacy Notice: {link}"]]],
+  ["note", "Statutory Audit Trail (Section 6(10)): You must log and store: User ID/Mobile, Notice version, Checkbox states, Timestamp, and IP/Channel. Retain in your Consent Register."]] });
+
+add({ id: "withdraw", group: "Customer-facing", title: "Withdrawal of Consent Form", law: "Section 6(4)–(6), Section 8(7)",
+  when: "Keep printed at counters and available online. Process withdrawals within a reasonable timeframe and notify Data Processors.",
+  body: () => [
+  ["p", "To: {co}\nI hereby withdraw my consent under Section 6(4) of the DPDP Act, 2023 for the following processing purposes:"],
+  ["dyn", "consentChecklist"],
+  ["cb", ["Withdraw all optional consents and erase personal data under Section 8(7) where retention is not required by law"]],
+  ["fill", ["Data Principal Name", "Registered Mobile / Email", "Signature", "Date"]],
+  ["ref", "Office Record: Received: ______ by ______  ·  Processing Ceased: ______  ·  Processors Notified: ______  ·  Confirmation Dispatched: ______"]] });
+
+add({ id: "existing", group: "Customer-facing", title: "Notice to Existing Customers", law: "Section 5(2)",
+  when: "Send to individuals whose consent was obtained prior to the commencement of the Act, as soon as reasonably practicable.",
+  body: () => [
+  ["h3", "SMS Template"],
+  ["note", "{co}: Under the DPDP Act 2023, we hold your name & mobile to provide services and billing. To withdraw consent or exercise rights (access/correction/erasure), reply STOP or email {email}. Notice: {link}"],
+  ["h3", "WhatsApp Template"],
+  ["note", "Dear Customer, at {co} we protect your privacy under the Digital Personal Data Protection Act, 2023:\n• Personal data held: [name, mobile number, purchase history]\n• Specified purpose: [service delivery, billing, reminders]\n• Your rights: access summary, correction, erasure, nomination (ss. 11-14)\n• Withdraw consent anytime: reply STOP or email {email}\n• Grievance contact: {officer}, {ph}\nPrivacy Notice: {link}"],
+  ["h3", "Email Template"],
+  ["p", "**Subject:** Statutory Privacy Notice under DPDP Act, 2023 — {co}"],
+  ["p", "Dear [Customer Name],\nThe Digital Personal Data Protection Act, 2023 is in force. We write to inform you under Section 5(2) regarding the personal data you previously provided to us.\n**Data we process:** [name, mobile, email, address, transaction history].\n**Specified purposes:** [service delivery, tax invoices, reminders, offers where opted in].\n**Your statutory rights:** You may withdraw consent at any time, request access summaries (s. 11), correction/updating (s. 12), or erasure (s. 12), or nominate a representative (s. 14). We respond within {days} days.\n**Grievances:** {officer}, {desig}, {ph}, {email}. If unresolved, you may approach the Data Protection Board of India.\nFull Notice: {link}\n\nRegards,\n{officer}, {co}"]] });
+
+add({ id: "cctv", group: "Customer-facing", title: "CCTV Surveillance Notice Board", law: "Section 5, Section 7(i), Section 8(5)",
+  when: "Display at prominent entrance points and surveillance zones at eye level.",
+  body: () => [
+  ["note", "**CCTV SURVEILLANCE IN OPERATION**\nThis facility is monitored by CCTV for safety, premises security, and crime prevention under Section 7 and Section 8 of the Digital Personal Data Protection Act, 2023. Footage is retained for {cctvDays} days and automatically overwritten, unless required for legal proceedings.\nData Fiduciary: {co}  ·  Contact: {officer}, {ph}, {email}\nPrivacy Notice available at reception/counter."],
+  ["ref", "Cameras must never monitor private zones (restrooms, changing rooms). Keep access restricted and encrypted per Section 8(5)."]] });
+
+add({ id: "parent", group: "Customer-facing", title: "Parent / Lawful Guardian Verifiable Consent Form", law: "Section 9 · Rules 10, 11, 12 · Fourth Schedule",
+  when: "Mandatory prior to processing any personal data of individuals under 18 years of age, or persons with disabilities with lawful guardians.",
+  body: () => [
+  ["p", "**{co}**  ·  {addr}"],
+  ["p", "Pursuant to Section 9(1) of the Digital Personal Data Protection Act, 2023, processing personal data of children requires verifiable parental consent. Please read our Privacy Notice ({link})."],
+  ["fill", ["Name of Child / Ward", "Date of Birth"]],
+  ["h3", "Categories of personal data processed"],
+  ["p", "[Name, date of birth, photograph, emergency medical records, parent contact details]"],
+  ["h3", "Permitted purposes"],
+  ["cb", ["[Enrollment, instruction, and academic assessment / medical care]", "[Routine academic/health updates via SMS/WhatsApp to parent]", "[Photographs in internal school publications / events] (optional)"]],
+  ["p", "Statutory Commitment (Section 9(2) & 9(3)): We do not track or behaviorally monitor children, nor do we serve targeted advertising to children. Consent may be withdrawn at any time."],
+  ["h3", "Parental Declaration"],
+  ["p", "I declare that I am the ☐ Parent  ☐ Lawful Guardian of the individual named above, that I am 18 years of age or older, and that all identity particulars furnished are verifiably authentic (Section 15(e))."],
+  ["fill", ["Parent / Guardian Name", "Relationship", "Mobile / Email", "Signature", "Date"]],
+  ["pb"],
+  ["h2", "Verification Record (Office Use Only)"],
+  ["table", ["Verification Metric", "Office Record"], [
+    ["Verification Method (Rule 10(1))", "☐ Verified customer profile  ☐ Physical ID inspected  ☐ DigiLocker  ☐ Guardianship Order (Rule 11)"],
+    ["Document Type & Last 4 Digits Only", ""], ["Parent Age Verified (18+)", "☐ Yes"],
+    ["Verified By (Staff Name, Date)", ""], ["Consent ID", ""]]],
+  ["ref", "Do not store copies of Aadhaar cards unless explicitly mandated by special statutes. Log only the last 4 digits."]] });
+
+add({ id: "telugu", group: "Customer-facing", title: "Telugu Privacy Notice & Consent Form", law: "Section 5(3), Section 6(3)", te: true,
+  when: "Offer to customers who prefer Telugu per Section 5(3) (Eighth Schedule languages).",
+  body: () => [
+  ["h2", "గోప్యతా నోటీసు (డిజిటల్ వ్యక్తిగత డేటా పరిరక్షణ చట్టం, 2023)"],
+  ["p", "{co}, {addr} మీ వ్యక్తిగత సమాచారాన్ని గౌరవిస్తుంది. డిజిటల్ వ్యక్తిగత డేటా పరిరక్షణ చట్టం, 2023 (Act No. 22 of 2023) ప్రకారం మేము ఏ సమాచారాన్ని సేకరిస్తామో, ఎందుకు ఉపయోగిస్తామో మరియు మీ చట్టబద్ధమైన హక్కులు ఏమిటో ఈ నోటీసు తెలియజేస్తుంది."],
+  ["h3", "సేకరించే వ్యక్తిగత సమాచారం"], ["p", "[పేరు, మొబైల్ నంబర్, ఇమెయిల్, చిరునామా]"],
+  ["h3", "ఉపయోగించే ప్రయోజనాలు"],
+  ["ul", ["మీరు కోరిన సేవను అందించడానికి (సెక్షన్ 7(a))", "ఇన్వాయిస్లు మరియు రసీదులు ఇవ్వడానికి", "సమాచారం మరియు రిమైండర్లు పంపడానికి", "మీ సమ్మతితో ఆఫర్లు పంపడానికి (సెక్షన్ 6)", "చట్టపరమైన బాధ్యతలు నెరవేర్చడానికి"]],
+  ["h3", "సమ్మతి ఉపసంహరణ హక్కు"],
+  ["p", "సెక్షన్ 6(4) ప్రకారం మీరు ఎప్పుడైనా సమ్మతిని సులభంగా ఉపసంహరించుకోవచ్చు: {email}కు ఈమెయిల్ పంపండి లేదా {ph}కు STOP అని సందేశం పంపండి."],
+  ["h3", "మీ చట్టపరమైన హక్కులు"],
+  ["ul", ["సమాచారం సారాంశం తెలుసుకోవడం (సెక్షన్ 11)", "సరిదిద్దడం లేదా తొలగించడం (సెక్షన్ 12)", "ఫిర్యాదుల పరిష్కారం (సెక్షన్ 13)", "నామినేషన్ హక్కు (సెక్షన్ 14)"]],
+  ["h3", "ఫిర్యాదుల సంప్రదింపు అధికారి"],
+  ["p", "{officer}, {desig}, ఫోన్: {ph}, ఈమెయిల్: {email}. మేము {days} రోజుల్లోగా స్పందిస్తాము. అసంతృప్తిగా ఉంటే భారత డేటా పరిరక్షణ బోర్డు (DPBI)కు ఫిర్యాదు చేయవచ్చు."],
+  ["pb"],
+  ["h2", "సమ్మతి పత్రం"],
+  ["fill", ["పేరు", "మొబైల్ / ఈమెయిల్", "సంతకం", "తేదీ"]]] });
+
+/* ---------- Rights & Complaints ---------- */
+add({ id: "requestform", group: "Rights and complaints", title: "Data Principal Request & Nomination Form", law: "Sections 6, 11–14 · Rule 14",
+  when: "Keep available at reception and on website. Log each submission immediately into the Rights Requests Register.",
+  body: () => [
+  ["h2", "Statutory Data Request Form"],
+  ["p", "To: {co}  ·  Email: {email}  ·  Address: {addr}"],
+  ["fill", ["Full Name of Data Principal", "Registered Mobile / Email / Customer ID", "Address for Correspondence"]],
+  ["h3", "Nature of request (check applicable)"],
+  ["cb", ["Right to Access: Summary of personal data, processing activities, and shared entities (Section 11)", "Right to Correction / Completion / Updating of personal data (Section 12)", "Right to Erasure of personal data (Section 12)", "Withdrawal of Consent for specified purposes (Section 6(4))", "Grievance Redressal complaint (Section 13)"]],
+  ["fill", ["Description of Request", "", "Signature", "Date"]],
+  ["ref", "Office Record: Ref No: ______  ·  Date Received: ______  ·  ID Verified: ______  ·  Statutory Due Date: ______"],
+  ["pb"],
+  ["h2", "Nomination Form (Section 14)"],
+  ["p", "I hereby nominate the following person(s) to exercise my rights under the Digital Personal Data Protection Act, 2023 in the event of my death or incapacity (unsoundness of mind or infirmity of body):"],
+  ["blank", ["Nominee Full Name", "Relationship", "Mobile / Email", "Address"], 2],
+  ["fill", ["Data Principal Signature", "Registered Contact", "Date"]]] });
+
+add({ id: "replies", group: "Rights and complaints", title: "Statutory Response Templates for Requests", law: "Sections 11–13 · Rules 9, 14",
+  when: "Deploy matching template for every formal response to maintain compliance audit trails.",
+  body: () => [
+  ["h3", "1. Acknowledgement Notice"],
+  ["note", "Dear [Data Principal Name],\nWe acknowledge receipt of your request dated [Date] (Reference: [Number]). We will provide our response by [Due Date], within our published timeframe of {days} days under Rule 14. For inquiries, contact: {contact}."],
+  ["h3", "2. Access Response (Section 11)"],
+  ["note", "Dear [Data Principal Name],\nPursuant to Section 11 of the DPDP Act 2023 and your request [Reference]:\n1. Summary of personal data processed: [List categories].\n2. Processing activities undertaken: [Describe storage/use].\n3. Data Processors / Entities shared with: [Processor Name, Data Shared, Purpose under s.8(2)].\nYou have the right to request correction, updating, or erasure under Section 12, or complain to the Data Protection Board of India under Section 13(3).\n{contact}"],
+  ["h3", "3. Correction / Completion Notice (Section 12(2))"],
+  ["note", "Dear [Data Principal Name],\nPursuant to Section 12(2), we have [corrected / completed / updated] your personal data in our systems and formally notified all Data Processors. Reference: [Number].\n{contact}"],
+  ["h3", "4. Erasure Confirmation (Section 12(3) & Section 8(7))"],
+  ["note", "Dear [Data Principal Name],\nPursuant to Section 12(3) and Section 8(7), your personal data has been erased from our active databases and Data Processors have been instructed to erase copies. [If applicable: Statutory retention applies to (Invoices) until (Date) under (Law); data is segregated solely for legal compliance.] Reference: [Number].\n{contact}"],
+  ["h3", "5. Grievance Redressal Decision (Section 13)"],
+  ["note", "Dear [Data Principal Name],\nThis refers to your grievance dated [Date] regarding [Issue]. After review: [Findings and corrective action taken]. If you remain aggrieved, you may approach the Data Protection Board of India under Section 13(3). Reference: [Number].\n{contact}"]] });
+
+/* ---------- Internal Policies ---------- */
+add({ id: "security", group: "Internal policies", title: "Information Security Safeguards Policy", law: "Section 8(4), Section 8(5) · Rule 6",
+  when: "Formally adopt, sign, and enforce. Failure to take reasonable security safeguards attracts penalties up to ₹250 Crore under The Schedule, Item 1.",
+  body: () => [
+  ["p", "This policy applies to all digital personal data in the possession or under the control of {co}, binding all employees and contractors. Policy Owner: {officer}, {desig}. Enacted pursuant to Section 8(5) of the DPDP Act, 2023."],
+  ["h2", "1. Technical Security Controls — Rule 6(1)(a)"],
+  ["cb", ["Full disk encryption enforced on all endpoints (BitLocker / FileVault / LUKS).", "Screen-lock auto-timeout set to maximum 5 minutes across all workstations.", "Encryption of personal data in transit (TLS 1.3/HTTPS) and at rest (AES-256).", "Masking / truncation of sensitive identifiers: display only last 4 digits of Aadhaar, PAN, and card numbers.", "Encrypted offsite backups stored in geographically segregated environments."]],
+  ["h2", "2. Identity & Access Management — Rule 6(1)(b)"],
+  ["cb", ["Principle of least privilege: access granted strictly on a need-to-know basis.", "Multi-Factor Authentication (MFA) mandated for email, cloud databases, billing systems, and VPNs.", "Individual named credentials only; shared accounts and shared passwords prohibited.", "Revocation of all access privileges on the final working day of departing personnel.", "Quarterly access rights audits conducted by the Data Protection Officer."]],
+  ["h2", "3. Audit Logging & Review — Rule 6(1)(c)"],
+  ["cb", ["Comprehensive logging of login attempts, data exports, modifications, and deletions.", "Monthly audit log reviews conducted by {officer} and recorded in the Log Review Register.", "Anomaly detection procedures for off-hour access or bulk data downloads."]],
+  ["h2", "4. Business Continuity & Disaster Recovery — Rule 6(1)(d)"],
+  ["cb", ["Automated daily backups with quarterly test restores to verify integrity.", "Updated malware protection and automated patching within 14 days of release.", "Ransomware response protocol: isolate, preserve logs, restore from backups, initiate Section 8(6) workflow."]],
+  ["h2", "5. Statutory Log Retention — Rule 6(1)(e) & Rule 8(3)"],
+  ["p", "System access logs and processing metadata must be retained for at least one year to enable forensic investigation of personal data breaches."],
+  ["h2", "6. Data Processor Due Diligence — Section 8(2)"],
+  ["p", "All Data Processors must execute our standard Data Processing Agreement prior to receiving personal data."],
+  ["sign", ["Approved by (Managing Director / Senior Partner)", "Date"]]] });
+
+add({ id: "breachplan", group: "Internal policies", title: "Data Breach Incident Response Plan", law: "Section 2(u), Section 8(6), Section 27(1)(a) · Rule 7",
+  when: "Keep accessible to all IT and operations staff. In an active breach, trigger the Breach Response workflow in this suite.",
+  body: () => [
+  ["p", "Under Section 2(u) of the DPDP Act 2023, a 'personal data breach' is any unauthorized processing, accidental disclosure, acquisition, sharing, use, alteration, destruction, or loss of access that compromises confidentiality, integrity, or availability. Failure to notify attracts penalties up to ₹200 Crore under The Schedule, Item 2."],
+  ["h3", "Incident Response Team"],
+  ["table", ["Role", "Name", "Contact"], [["Incident Lead", "{officer}", "{ph}"], ["Alternate Lead", "{backup}", "{backupPh}"], ["Privacy Advisory", "Mohd Faiz", "faizbvm@gmail.com"], ["National Cybercrime Helpline", "MHA Portal", "1930"]]],
+  ["h3", "Mandatory Statutory Timelines"],
+  ["table", ["Stage", "Statutory Action", "Authority"], [
+    ["Immediate (T+0)", "Contain incident, isolate devices, revoke compromised tokens. Note exact discovery timestamp.", "Section 8(5)"],
+    ["Triage (T+2h)", "Assess categories of data and estimated Data Principals affected.", "Section 2(u), s.33(2)"],
+    ["Without Undue Delay", "Intimate each affected Data Principal with recommended protective actions.", "Section 8(6)"],
+    ["Within 72 Hours", "Submit formal regulatory intimation to the Data Protection Board of India.", "Section 8(6) · Rule 7"],
+    ["Post-Incident", "Root cause audit, technical safeguard review, retain forensic records for 3 years.", "Section 8(4), s.27(1)"]]]] });
+
+add({ id: "dpa", group: "Internal policies", title: "Data Processing Agreement (DPA)", law: "Section 8(1), (2), (5), (6), (7)(b) · Rule 6", perVendor: true,
+  when: "Execute with every third-party service provider, SaaS vendor, or contractor processing personal data on your behalf.",
+  body: (s, v) => [
+  ["p", "This Data Processing Agreement is entered into under Section 8(2) of the Digital Personal Data Protection Act, 2023 between **{co}**, {addr} (the “Data Fiduciary”), and **" + (v && v.name || "[Data Processor Name]") + "**, " + (v && v.addr || "[Address]") + " (the “Data Processor”)."],
+  ["h3", "1. Scope & Instructions"],
+  ["p", "The Data Processor shall process personal data solely on documented instructions from the Data Fiduciary for the purpose of providing: " + (v && v.service || "[Service Description]") + ". The Processor shall not process data for secondary purposes or commercial gain."],
+  ["h3", "2. Security Safeguards (Section 8(5))"],
+  ["p", "The Processor shall maintain reasonable security safeguards, including encryption, access controls, multi-factor authentication, and daily backups, complying with Rule 6 of the DPDP Rules."],
+  ["h3", "3. Breach Notification within 12 Hours"],
+  ["p", "Upon discovering any personal data breach affecting Fiduciary Data, the Processor shall notify the Data Fiduciary in writing without delay and in any event within 12 hours, providing all forensic details necessary for the Fiduciary to satisfy Section 8(6)."],
+  ["h3", "4. Assistance with Statutory Rights"],
+  ["p", "The Processor shall assist the Fiduciary within 5 business days in fulfilling Data Principal requests under Sections 11, 12, 13, and 14, and cease processing upon withdrawal of consent (Section 6(6))."],
+  ["h3", "5. Data Erasure & Termination (Section 8(7)(b))"],
+  ["p", "Upon termination of services or instruction from the Fiduciary, the Processor shall permanently erase all personal data, including backups, within 30 days and provide written certification."],
+  ["table", ["For Data Fiduciary: {co}", "For Data Processor: " + (v && v.name || "[Processor]")], [["Signature:\nName:\nTitle:\nDate:", "Signature:\nName:\nTitle:\nDate:"]]]] });
+
+add({ id: "retention", group: "Internal policies", title: "Data Retention and Erasure Schedule", law: "Section 8(7), Section 8(8), Section 12(3) · Rule 8",
+  when: "Derived from Data Inventory. Conduct quarterly erasure audits to prevent unlawful over-retention.",
+  body: () => [
+  ["ul", ["**Mandatory Erasure:** Erase personal data upon consent withdrawal or when purpose is served, whichever is earlier (Section 8(7)(a)).", "**Statutory Exceptions:** Personal data may be retained where mandated by tax, company, or labor statutes.", "**Processor Obligation:** Cause Data Processors to erase data upon fiduciary notification (Section 8(7)(b))."]],
+  ["dyn", "retentionTable"],
+  ["h3", "Certified Erasure Protocols"],
+  ["ol", ["Database records permanently purged (hard delete, not soft-flagged).", "Cloud object storage and email attachments purged.", "Physical paper records destroyed using cross-cut shredders.", "Written confirmation obtained from all Data Processors.", "Log recorded in the Erasure Register in this suite."]]] });
+
+add({ id: "staff", group: "Internal policies", title: "Staff Code of Conduct & Confidentiality Undertaking", law: "Section 8(4), Section 8(5), Section 7(i) · Rule 6",
+  when: "Require all new hires and contractors to sign prior to granting system access. Retain in Training Register.",
+  body: () => [
+  ["p", "Employees are the primary defense against personal data breaches at {co}. Failure to protect personal data exposes the organisation to penalties up to ₹250 Crore under Section 33."],
+  ["h3", "Ten Rules of Data Protection"],
+  ["ol", ["Collect only minimum necessary personal data on approved forms (Section 6(1)).", "Always display the statutory notice and never pre-tick consent checkboxes.", "Never access customer data for personal curiosity or outside authorized duties.", "Never share passwords, MFA tokens, or workstation sessions.", "Personal email and unapproved USB storage devices are strictly prohibited.", "Verify recipient email addresses prior to sending attachments containing personal data.", "Lock screens whenever stepping away from workstations.", "Direct all customer inquiries or complaints to {officer} immediately.", "Report any suspicious incident or data spill immediately to {ph}.", "Return all company data and devices upon separation; retain zero copies."]],
+  ["pb"],
+  ["h2", "Employee Confidentiality Undertaking"],
+  ["p", "I, ____________________, employed as ____________________ at {co}, confirm that I have reviewed the Information Security Policy, understand my statutory duties under the DPDP Act 2023, and agree to maintain strict confidentiality."],
+  ["fill", ["Employee Signature", "Date", "Supervisor Signature"]]] });
+
+add({ id: "inventorydoc", group: "Records and reports", title: "Data Inventory & Mapping Report", law: "Section 4, Section 5, Section 8(4)", landscape: true,
+  when: "Exportable record of processing activities. Maintain a signed copy for compliance documentation.",
+  body: () => [["dyn", "inventoryFull"], ["sign", ["Audited and Confirmed by Data Protection Officer", "Date"]]] });
+
+add({ id: "report", group: "Records and reports", title: "Comprehensive Compliance Audit Report", law: "Statutory Compliance Audit — Act No. 22 of 2023",
+  when: "Generate for management review, external auditors, or submission to the Data Protection Board of India.",
+  body: () => [["dyn", "statusReport"]] });
+
+return D;
+})();
+if (typeof module !== "undefined") module.exports = DPDP_DOCS;
+
+/* ─── DPDP Statutory Steps & Calendar ─── */
+var DPDP_STEPS = [
+ { phase: "Phase 1: Governance & Data Mapping", items: [
+  { id: "officer", t: "Appoint Designated Contact / DPO", law: "Section 8(9), Rule 9", go: "setup",
+    how: ["Appoint an individual responsible for personal data governance and answering Data Principal queries.", "Enter particulars in Business Setup; all legal notices and registers will dynamically populate.", "Ensure the contact information is prominently published on your website and physical counters."] },
+  { id: "inventory", t: "Complete Digital Personal Data Inventory", law: "Section 4, Section 5, Section 8(4)", go: "inventory",
+    how: ["Open Data Inventory and load the preset corresponding to your business sector.", "Identify all intake touchpoints: web forms, billing tools, WhatsApp, HR, and CCTV.", "Map data items, purposes, access permissions, storage locations, and retention periods."] },
+  { id: "basis", t: "Assign Statutory Grounds for Processing", law: "Section 4, Section 6, Section 7", go: "inventory",
+    how: ["Designate legal bases: Section 6 for consent, Section 7(a) for primary service delivery, Section 7(i) for employment.", "Ensure data collected under Section 7(a) is not diverted to marketing without fresh Section 6 consent."] },
+  { id: "vendors", t: "Audit and Log All Data Processors", law: "Section 8(1), Section 8(2)", go: "vendors",
+    how: ["Log all SaaS vendors, cloud hosts, payment gateways, and IT contractors handling personal data.", "Verify processing takes place only under valid contracts per Section 8(2)."] } ] },
+ { phase: "Phase 2: Lawful Notice & Consent Architecture", items: [
+  { id: "notice", t: "Publish Compliant Privacy Notice", law: "Section 5(1), Rules 3, 9, 14", go: "doc:notice",
+    how: ["Ensure notice is clear, plain, and self-contained at a fixed web address.", "Specify categories of data, purposes, rights exercise methods, and DPBI complaint procedure.", "Set your published grievance resolution period (maximum 90 days per Rule 14)."] },
+  { id: "language", t: "Provide Multilingual Notice Access", law: "Section 5(3), Section 6(3)", go: "doc:telugu",
+    how: ["Offer notice in English and Eighth Schedule languages (e.g. Telugu/Hindi) as required by Section 5(3).", "Ensure printed copies in regional languages are accessible at counters."] },
+  { id: "consent", t: "Deploy Valid Consent Mechanism", law: "Section 6(1)–(3)", go: "doc:consent",
+    how: ["Ensure consent is free, specific, informed, unconditional, and unambiguous with clear affirmative action.", "Never use pre-ticked checkboxes or bundled consent terms. Keep optional marketing unbundled."] },
+  { id: "proof", t: "Maintain Statutory Proof of Consent", law: "Section 6(10)", go: "reg:consent",
+    how: ["Log every consent in the Consent Register: timestamp, user ID, notice version, and channel.", "Retain audit logs to satisfy burden of proof in Board proceedings under Section 6(10)."] },
+  { id: "withdrawal", t: "Enable Frictionless Consent Withdrawal", law: "Section 6(4)–(6)", go: "reg:withdrawal",
+    how: ["Ensure withdrawal is as easy as giving consent (e.g., reply STOP, online toggle).", "On withdrawal, cease processing within reasonable time and instruct Data Processors under Section 6(6)."] },
+  { id: "existing", t: "Notice to Pre-Existing Consenting Principals", law: "Section 5(2)", go: "doc:existing",
+    how: ["Prepare Section 5(2) notices for personal data collected on consent prior to the Act.", "Dispatch via SMS, WhatsApp, or email and document dispatch dates."] },
+  { id: "children", t: "Enforce Verifiable Parental Consent", law: "Section 9, Rules 10–12", go: "doc:parent",
+    how: ["Verify age prior to processing. Obtain verifiable consent from parents/guardians for minors under 18.", "Ensure zero behavioral tracking or targeted advertising directed at children (Section 9(3))."] } ] },
+ { phase: "Phase 3: Security Safeguards & Vendor Governance", items: [
+  { id: "dpa", t: "Execute Data Processing Agreements", law: "Section 8(2), Rule 6", go: "vendors",
+    how: ["Execute DPAs with all Data Processors containing breach reporting, security, and erasure clauses.", "Ensure processors are legally prohibited from secondary data exploitation."] },
+  { id: "encrypt", t: "Implement Technical Encryption & Masking", law: "Section 8(5), Rule 6(1)(a)", go: "doc:security",
+    how: ["Enforce full-disk encryption across all company laptops, desktops, and portable storage.", "Mask sensitive identifiers (display last 4 digits only). Implement TLS 1.3 in transit."] },
+  { id: "access", t: "Enforce Role-Based Access Controls & MFA", law: "Section 8(5), Rule 6(1)(b)", go: "doc:security",
+    how: ["Mandate MFA on all cloud portals, email systems, and remote access tools.", "Revoke departing staff access immediately on separation."] },
+  { id: "logs", t: "Enable Audit Logging & Monthly Reviews", law: "Rule 6(1)(c), Rule 8(3)", go: "reg:logreview",
+    how: ["Retain system and security logs for at least one year per Rule 8(3).", "Perform and record monthly log reviews in the Log Review Register."] },
+  { id: "backup", t: "Automate Backups & Conduct Restore Tests", law: "Rule 6(1)(d)", go: "doc:security",
+    how: ["Schedule automated daily backups with offsite replication.", "Perform test restores every 90 days and log results."] },
+  { id: "staff", t: "Conduct Staff Training & Collect Undertakings", law: "Section 8(4)", go: "doc:staff",
+    how: ["Brief all personnel on data handling rules. Obtain signed confidentiality undertakings.", "Maintain records in the Staff Training Register."] } ] },
+ { phase: "Phase 4: Statutory Rights & Breach Readiness", items: [
+  { id: "rights", t: "Operationalize Rights Request Mechanism", law: "Sections 11, 12, 14", go: "reg:rights",
+    how: ["Log incoming requests in the Rights Register. Automatically calculate statutory response deadlines.", "Issue formal responses using approved statutory templates."] },
+  { id: "grievance", t: "Maintain Grievance Redressal System", law: "Section 8(10), Section 13", go: "reg:rights",
+    how: ["Acknowledge and resolve complaints within your published timeframe.", "Document decisions; exhaustion of internal redressal is required before Board complaints (Section 13(3))."] },
+  { id: "breach", t: "Establish Section 8(6) Breach Response Workflow", law: "Section 8(6), Section 27(1)(a)", go: "doc:breachplan",
+    how: ["Deploy internal incident response procedures to meet the 72-hour Board reporting deadline.", "Use the Section 8(6) workflow module in this suite during active incidents."] },
+  { id: "erase", t: "Execute Quarterly Retention & Erasure Audits", law: "Section 8(7), Section 12(3)", go: "reg:erasure",
+    how: ["Audit data against retention periods. Execute certified erasures and log in Erasure Register."] },
+  { id: "review", t: "Conduct Annual Comprehensive Compliance Review", law: "Section 8(4)", go: "calendar",
+    how: ["Review data inventories, DPA terms, and security controls annually. Export Compliance Audit Report."] } ] }
+];
+
+var DPDP_CAL = [
+ { id: "backupchk", t: "Verify backup completion & integrity", every: 7, go: "doc:security" },
+ { id: "logrev", t: "Conduct monthly security log audit", every: 30, go: "reg:logreview" },
+ { id: "duechk", t: "Audit pending rights requests against deadlines", every: 30, go: "reg:rights" },
+ { id: "accessrev", t: "Quarterly access rights audit & leaver revocation", every: 91, go: "doc:security" },
+ { id: "erasure", t: "Quarterly data retention & statutory erasure audit", every: 91, go: "reg:erasure" },
+ { id: "restore", t: "Quarterly disaster recovery & restore test", every: 91, go: "doc:security" },
+ { id: "inv", t: "Bi-annual data inventory & processing review", every: 182, go: "inventory" },
+ { id: "annual", t: "Annual DPDP compliance review & status report", every: 365, go: "steps" },
+ { id: "refresher", t: "Annual staff privacy & security refresher training", every: 365, go: "reg:training" },
+ { id: "lawchk", t: "Review Data Protection Board rules and notifications", every: 365, go: "help" }
+];
+if (typeof module !== "undefined") module.exports = { DPDP_STEPS, DPDP_CAL };
+
+/* ─── App Logic & Runtime ─── */
+(function () {
+"use strict";
+
+const CREDIT = "Developed by Mohd Faiz · Faculty of Law, University of Delhi";
+const EMAIL = "faizbvm@gmail.com";
+const LINKEDIN = "https://linkedin.com/in/adv-mohd-faiz";
+const KEY = "dpdp_suite_faiz.v1";
+const DEADLINE = new Date("2027-05-13T00:00:00+05:30");
+const TYPES = ["Clinic / hospital", "School / coaching", "Retail shop", "Restaurant / café", "Real estate / builder", "Online business / startup", "Professional firm", "Other"];
+const BASES = { "consent": "Consent (Section 6)", "7a": "Service Delivery (Section 7(a))", "7i": "Employment (Section 7(i))", "7d": "Legal Disclosure (Section 7(d))", "7e": "Court Order (Section 7(e))", "7f": "Medical / Emergency (Section 7(f)–(h))" };
+
+/* ---------- State ---------- */
+const blank = () => ({
+  biz: { name: "", type: "", addr: "", city: "", web: "", noticeUrl: "", officer: "", desig: "", email: "", ph: "", backup: "", backupPh: "",
+    days: 30, means: "", ident: "", langs: "English and Hindi", children: "no", cctv: "no", cctvDays: 30 },
+  inv: [], vendors: [], steps: {}, cal: {}, activeBreach: null,
+  reg: { consent: [], withdrawal: [], rights: [], breach: [], erasure: [], training: [], logreview: [] }, v: 1 });
+
+let S = load();
+function load() {
+  try { const x = JSON.parse(localStorage.getItem(KEY)); if (x && x.biz) return merge(blank(), x); } catch (e) {}
+  return blank();
+}
+function merge(a, b) { for (const k in b) { if (b[k] && typeof b[k] === "object" && !Array.isArray(b[k]) && a[k] && typeof a[k] === "object") merge(a[k], b[k]); else a[k] = b[k]; } return a; }
+let saveT;
+function save() { clearTimeout(saveT); saveT = setTimeout(() => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }, 150); }
+
+/* ---------- Helpers ---------- */
+const $ = (q, r = document) => r.querySelector(q);
+const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+const todayISO = () => { const d = new Date(); d.setMinutes(d.getMinutes() - d.getTimezoneOffset()); return d.toISOString().slice(0, 10); };
+const nowLocal = () => { const d = new Date(); d.setMinutes(d.getMinutes() - d.getTimezoneOffset()); return d.toISOString().slice(0, 16); };
+const addDays = (iso, n) => { const d = new Date(iso + "T00:00:00"); d.setDate(d.getDate() + n); return d.toISOString().slice(0, 10); };
+const fmtD = (iso) => iso ? new Date(iso.length > 10 ? iso : iso + "T00:00:00").toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" }) : "";
+const fmtDT = (iso) => iso ? new Date(iso).toLocaleString("en-IN", { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" }) : "";
+const daysBetween = (a, b) => Math.round((new Date(b + "T00:00:00") - new Date(a + "T00:00:00")) / 864e5);
+function toast(msg) { const t = $("#toast"); t.textContent = msg; t.hidden = false; clearTimeout(t._h); t._h = setTimeout(() => t.hidden = true, 3000); }
+function get(path) { return path.split(".").reduce((o, k) => o == null ? o : o[k], S); }
+function set(path, val) { const ks = path.split("."); let o = S; ks.slice(0, -1).forEach(k => o = o[k]); o[ks[ks.length - 1]] = val; save(); }
+
+/* ---------- Tokens & Document Rendering ---------- */
+function tokens() {
+  const b = S.biz, P = (v, l) => (v && String(v).trim()) ? String(v).trim() : "[" + l + "]";
+  const t = {
+    co: P(b.name, "Data Fiduciary Legal Name"), addr: P(b.addr, "Registered Office Address"), city: P(b.city, "Jurisdiction City"),
+    link: P(b.noticeUrl, "Privacy Notice URL"), officer: P(b.officer, "Data Protection Officer / Contact"), desig: P(b.desig, "Designation"),
+    email: P(b.email, "Grievance Redressal Email"), ph: P(b.ph, "Official Phone"), backup: P(b.backup, "Alternate Contact"), backupPh: P(b.backupPh, "Alternate Phone"),
+    days: String(Math.min(90, Math.max(1, +b.days || 30))), langs: P(b.langs, "English and Hindi"), cctvDays: String(b.cctvDays || 30),
+    date: fmtD(todayISO()),
+    childLine: b.children === "yes" ? "We process personal data of children below 18 only with the verifiable consent of a parent or lawful guardian per Section 9." : "We do not knowingly process personal data of children below 18 without verifiable parental consent.",
+  };
+  t.withdrawLink = b.noticeUrl ? b.noticeUrl + " (Consent Center)" : "[Consent Management URL]";
+  t.means = b.means && b.means.trim() ? b.means.trim() : "by writing to " + t.email + ", or in person at our registered office";
+  t.ident = b.ident && b.ident.trim() ? b.ident.trim() : "the mobile number, email address, or unique ID registered with us";
+  t.contact = t.officer + ", " + t.desig + ", " + t.co + ", " + t.email + ", " + t.ph;
+  return t;
+}
+function fmt(str, T) {
+  let s = esc(str);
+  s = s.replace(/\{(\w+)\}/g, (m, k) => T[k] != null ? esc(T[k]) : m);
+  s = s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+  s = s.replace(/\[([^\]]+)\]/g, '<mark>[$1]</mark>');
+  return s.replace(/\n/g, "<br>");
+}
+const custRows = () => S.inv.filter(r => !/^7i$/.test(r.basis));
+function dyn(name, T) {
+  const cr = custRows(), tb = (h, rows) => [["table", h, rows.map(r => r.map(c => String(c == null ? "" : c)))]];
+  if (name === "noticeTable") return tb(["Categories of Personal Data", "Specified Purpose", "Service Enabled", "Statutory Ground"],
+    cr.length ? cr.map(r => [r.items || "[Data Categories]", r.purpose || "[Purpose]", r.service || "[Service]", r.basis === "consent" ? "Consent (Section 6)" : r.basis === "7a" ? "Service Delivery (Section 7(a))" : (BASES[r.basis] || "")]) :
+    [["[Name, Mobile, Email]", "[Provision of contracted services]", "[Account Management, Orders]", "Section 7(a)"], ["[Mobile Number]", "[Product updates & offers]", "[Communications]", "Consent (Section 6)"]]);
+  if (name === "vendorList") return [["ul", S.vendors.length ? S.vendors.map(v => v.name + (v.service ? " — " + v.service : "") + " (Section 8(2) DPA executed)") : ["[List of engaged Data Processors: Cloud host, Billing software, Courier, Payment Gateway]"]]];
+  if (name === "dataItems") { const it = [...new Set(cr.map(r => r.items).filter(Boolean))]; return [["p", it.length ? it.join("; ") : "[Name, Mobile Number, Email Address, Billing Particulars]"]]; }
+  if (name === "serviceList") { const x = cr.filter(r => r.basis === "7a"); return [["ul", x.length ? x.map(r => r.purpose || "[Primary Purpose]") : ["[Fulfillment of requested goods/services under Section 7(a)]"]]]; }
+  if (name === "consentRows") { const c = cr.filter(r => r.basis === "consent"); return tb(["Specified Purpose", "Data Utilised", "Affirmative Choice"], (c.length ? c : [{ purpose: "[Sending updates and marketing communications]", items: "[Mobile Number / Email]" }]).map(r => [r.purpose, r.items, "☐ I Agree"])); }
+  if (name === "consentChecklist") { const c = cr.filter(r => r.basis === "consent"); return [["cb", c.length ? c.map(r => r.purpose) : ["[Marketing Communications and Offers]"]]]; }
+  if (name === "retentionTable") return tb(["Record Type", "Purpose", "Retention Window", "Statutory Ground", "Erasure Protocol"], S.inv.length ? S.inv.map(r => [r.items, r.purpose, r.retention || "[Period]", BASES[r.basis] || "", r.erase || "Purge"]) :
+    [["[Customer Account Data]", "[Service Fulfillment]", "[Duration of account + 1 year]", "Section 7(a)", "Purge Database Record"], ["[Invoices & Tax Records]", "[Statutory Compliance]", "[8 years — per tax law]", "Section 7(d)", "Secure Purge / Shredding"], ["[System Audit Logs]", "[Security & Forensic Audit]", "[At least 1 year]", "Rule 8(3)", "Automated Purge"]]);
+  if (name === "inventoryFull") return tb(["Data Category", "Data Principals", "Intake Source", "Specified Purpose", "Statutory Ground", "Storage Infrastructure", "Access Scope", "Data Processor", "Retention", "Erasure Method"], S.inv.length ? S.inv.map(r => [r.items, r.whose, r.source, r.purpose, BASES[r.basis] || "", r.storage, r.access, r.vendor, r.retention, r.erase]) : [["[Add data categories in the Data Inventory tab]", "", "", "", "", "", "", "", "", ""]]);
+  if (name === "statusReport") {
+    const all = DPDP_STEPS.flatMap(p => p.items), done = all.filter(i => S.steps[i.id] && S.steps[i.id].done).length, r = S.reg;
+    return [["p", "**{co}** — " + done + " of " + all.length + " statutory compliance items completed as of {date}."],
+      ...tb(["Statutory Duty", "Enabling Provision", "Status", "Completion Date", "Compliance Evidence"], all.map(i => { const x = S.steps[i.id] || {}; return [i.t, i.law, x.done ? "Compliant" : "Pending Action", x.done ? fmtD(x.done) : "", x.note || ""]; })),
+      ["h3", "Statutory Registers Summary"], ...tb(["Register", "Total Logged Entries"], [["Consents Logged (Section 6(10))", r.consent.length], ["Withdrawals Processed (Section 6(4))", r.withdrawal.length], ["Data Principal Requests & Grievances (Sections 11–14)", r.rights.length], ["Breach Incident Intimations (Section 8(6))", r.breach.length], ["Certified Erasures (Section 8(7))", r.erasure.length], ["Staff Training & Undertakings (Section 8(4))", r.training.length], ["Audit Log Reviews (Rule 6(1)(c))", r.logreview.length]]),
+      ["h3", "Data Processors & DPA Governance (Section 8(2))"], ...tb(["Data Processor", "Service Scope", "Section 8(2) DPA Status"], S.vendors.length ? S.vendors.map(v => [v.name, v.service || "", v.signed ? "Executed on " + fmtD(v.signed) : "Pending Execution"]) : [["No third-party processors recorded", "", ""]])];
+  }
+  return [];
+}
+function expand(blocks) { return blocks.flatMap(b => b[0] === "dyn" ? dyn(b[1]) : [b]); }
+function renderBlocks(blocks, T) {
+  let h = "";
+  for (const b of expand(blocks)) {
+    const [k, a, c] = b;
+    if (k === "h2") h += "<h2>" + fmt(a, T) + "</h2>";
+    else if (k === "h3") h += "<h3>" + fmt(a, T) + "</h3>";
+    else if (k === "p") h += "<p>" + fmt(a, T) + "</p>";
+    else if (k === "ref") h += '<p class="ref">' + fmt(a, T) + "</p>";
+    else if (k === "note") h += '<div class="dnote">' + fmt(a, T) + "</div>";
+    else if (k === "ul" || k === "ol") h += "<" + k + ">" + a.map(i => "<li>" + fmt(i, T) + "</li>").join("") + "</" + k + ">";
+    else if (k === "cb") h += '<ul class="cb">' + a.map(i => "<li>☐ " + fmt(i, T) + "</li>").join("") + "</ul>";
+    else if (k === "table") h += "<table><thead><tr>" + a.map(x => "<th>" + fmt(x, T) + "</th>").join("") + "</tr></thead><tbody>" + c.map(r => "<tr>" + r.map(x => "<td>" + fmt(x, T) + "</td>").join("") + "</tr>").join("") + "</tbody></table>";
+    else if (k === "blank") h += "<table><thead><tr>" + a.map(x => "<th>" + esc(x) + "</th>").join("") + "</tr></thead><tbody>" + Array.from({ length: c || 5 }, () => "<tr>" + a.map(() => "<td>&nbsp;</td>").join("") + "</tr>").join("") + "</tbody></table>";
+    else if (k === "fill") h += a.map(l => '<p class="fill">' + fmt(l, T) + ' <span class="line"></span></p>').join("");
+    else if (k === "sign") h += a.map(l => '<p class="sign"><span class="line"></span><br><small>' + fmt(l, T) + "</small></p>").join("");
+    else if (k === "pb") h += '<div class="pb"></div>';
+  }
+  return h;
+}
+function docHTML(doc, vendor) {
+  const T = tokens();
+  return '<div class="dhead"><div class="kicker">DPDP COMPLIANCE SUITE · ACT NO. 22 OF 2023</div><h1>' + esc(doc.title) + "</h1>" +
+    '<div class="dmeta">' + fmt("{co}", T) + " · Version 1.0 · " + esc(T.date) + "</div>" +
+    '<div class="dlaw">The Digital Personal Data Protection Act, 2023 — ' + esc(doc.law) + "</div></div>" +
+    renderBlocks(doc.body(S, vendor), T) +
+    '<div class="dfoot">' + esc(CREDIT) + " · " + esc(EMAIL) + " · " + esc(LINKEDIN) + "</div>";
+}
+
+/* ---------- Export Engine ---------- */
+function saveFile(name, data, mime) {
+  try {
+    const url = URL.createObjectURL(data instanceof Blob ? data : new Blob([data], { type: mime }));
+    const a = document.createElement("a"); a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000); toast("Downloading " + name);
+  } catch (e) { toast("Download blocked. Please copy content directly."); }
+}
+function tRuns(D, str, T, base = {}) {
+  let s = String(str).replace(/\{(\w+)\}/g, (m, k) => T[k] != null ? T[k] : m);
+  const out = []; s.split("\n").forEach((line, li) => {
+    if (li) out.push(new D.TextRun({ break: 1, ...base }));
+    line.split(/(\*\*[^*]+\*\*|\[[^\]]+\])/).forEach(part => {
+      if (!part) return;
+      if (part.startsWith("**") && part.endsWith("**")) out.push(new D.TextRun({ text: part.slice(2, -2), bold: true, ...base }));
+      else if (/^\[[^\]]+\]$/.test(part)) out.push(new D.TextRun({ text: part, highlight: "yellow", ...base }));
+      else out.push(new D.TextRun({ text: part, ...base }));
+    });
+  });
+  return out;
+}
+function buildDocx(D, doc, vendor) {
+  const T = tokens(), wide = !!doc.landscape, total = (wide ? 16838 : 11906) - 2268, font = doc.te ? "Nirmala UI" : "Calibri";
+  const PRIMARY = "0F172A", GREY = "64748B", LINE = "E2E8F0", ACCENT = "2563EB";
+  const bd = { style: D.BorderStyle.SINGLE, size: 4, color: LINE };
+  const P = (children, o = {}) => new D.Paragraph({ children, ...o });
+  let inst = 0;
+  const table = (head, rows) => {
+    const n = head.length, w = Array(n).fill(Math.floor(total / n)); w[n - 1] += total - w.reduce((a, b) => a + b, 0);
+    const cell = (t, i, h) => new D.TableCell({ width: { size: w[i], type: D.WidthType.DXA }, margins: { top: 50, bottom: 50, left: 90, right: 90 },
+      shading: h ? { type: D.ShadingType.CLEAR, color: "auto", fill: "F8FAFC" } : undefined,
+      children: [P(tRuns(D, t, T, { size: 18, bold: h || undefined, color: h ? PRIMARY : undefined }))] });
+    return [new D.Table({ width: { size: total, type: D.WidthType.DXA }, columnWidths: w,
+      borders: { top: bd, bottom: bd, left: bd, right: bd, insideHorizontal: bd, insideVertical: bd },
+      rows: [new D.TableRow({ tableHeader: true, children: head.map((t, i) => cell(t, i, true)) }), ...rows.map(r => new D.TableRow({ cantSplit: true, children: r.map((t, i) => cell(t, i, false)) }))] }), P([])];
+  };
+  const kids = [
+    P([new D.TextRun({ text: "DPDP COMPLIANCE SUITE · ACT NO. 22 OF 2023", bold: true, size: 16, color: ACCENT, characterSpacing: 40 })]),
+    P(tRuns(D, doc.title, T), { heading: D.HeadingLevel.HEADING_1 }),
+    P(tRuns(D, "{co}  ·  Version 1.0  ·  {date}", T, { size: 18, color: GREY })),
+    P([new D.TextRun({ text: "The Digital Personal Data Protection Act, 2023 — " + doc.law, italics: true, size: 17, color: GREY })], { border: { bottom: { style: D.BorderStyle.SINGLE, size: 8, color: PRIMARY, space: 6 } }, spacing: { after: 240 } }),
+  ];
+  for (const b of expand(doc.body(S, vendor))) {
+    const [k, a, c] = b;
+    if (k === "h2") kids.push(P(tRuns(D, a, T), { heading: D.HeadingLevel.HEADING_2, keepNext: true }));
+    else if (k === "h3") kids.push(P(tRuns(D, a, T), { heading: D.HeadingLevel.HEADING_3, keepNext: true }));
+    else if (k === "p") kids.push(P(tRuns(D, a, T), { spacing: { after: 120 } }));
+    else if (k === "ref") kids.push(P(tRuns(D, a, T, { size: 17, italics: true, color: GREY }), { spacing: { after: 120 } }));
+    else if (k === "note") kids.push(P(tRuns(D, a, T), { shading: { type: D.ShadingType.CLEAR, color: "auto", fill: "F8FAFC" }, border: { left: { style: D.BorderStyle.SINGLE, size: 18, color: PRIMARY, space: 8 } }, indent: { left: 160, right: 160 }, spacing: { before: 120, after: 160 } }));
+    else if (k === "ul" || k === "ol" || k === "cb") { inst++; a.forEach(i => kids.push(P(tRuns(D, i, T), { numbering: { reference: k === "ol" ? "num" : k === "cb" ? "box" : "dot", level: 0, instance: inst }, spacing: { after: 60 } }))); kids.push(P([])); }
+    else if (k === "table") kids.push(...table(a, c));
+    else if (k === "blank") kids.push(...table(a, Array.from({ length: c || 5 }, () => a.map(() => " "))));
+    else if (k === "fill") a.forEach(l => kids.push(P([...tRuns(D, l + " ", T), new D.TextRun({ text: "_".repeat(Math.max(12, 64 - l.length)) })], { spacing: { before: 120, after: 120 } })));
+    else if (k === "sign") a.forEach(l => kids.push(P([new D.TextRun({ text: "______________________________" })], { spacing: { before: 480 } }), P(tRuns(D, l, T, { size: 18, color: GREY }))));
+    else if (k === "pb") kids.push(P([new D.PageBreak()]));
+  }
+  const footer = new D.Footer({ children: [P([
+    new D.TextRun({ text: CREDIT + "  ·  " + EMAIL + "\t", size: 15, color: GREY }),
+    new D.TextRun({ children: ["Page ", D.PageNumber.CURRENT, " of ", D.PageNumber.TOTAL_PAGES], size: 15, color: GREY })],
+    { tabStops: [{ type: D.TabStopType.RIGHT, position: total }], border: { top: { style: D.BorderStyle.SINGLE, size: 4, color: LINE, space: 4 } } })] });
+  const lvl = (text, ind) => [{ level: 0, format: text === "%1." ? D.LevelFormat.DECIMAL : D.LevelFormat.BULLET, text, alignment: D.AlignmentType.LEFT, style: { paragraph: { indent: { left: 400, hanging: ind } } } }];
+  return new D.Document({ creator: "Mohd Faiz", title: doc.title,
+    styles: { default: { document: { run: { font, size: 21 } } }, paragraphStyles: [
+      { id: "Heading1", name: "Heading 1", basedOn: "Normal", next: "Normal", quickFormat: true, run: { font: doc.te ? font : "Calibri", size: 34, bold: true, color: PRIMARY }, paragraph: { spacing: { after: 80 }, outlineLevel: 0 } },
+      { id: "Heading2", name: "Heading 2", basedOn: "Normal", next: "Normal", quickFormat: true, run: { font: doc.te ? font : "Calibri", size: 24, bold: true, color: PRIMARY }, paragraph: { spacing: { before: 240, after: 100 }, outlineLevel: 1 } },
+      { id: "Heading3", name: "Heading 3", basedOn: "Normal", next: "Normal", quickFormat: true, run: { size: 21, bold: true }, paragraph: { spacing: { before: 160, after: 80 }, outlineLevel: 2 } }] },
+    numbering: { config: [{ reference: "dot", levels: lvl("•", 260) }, { reference: "box", levels: lvl("☐", 300) }, { reference: "num", levels: lvl("%1.", 300) }] },
+    sections: [{ properties: { page: { size: wide ? { width: 11906, height: 16838, orientation: D.PageOrientation.LANDSCAPE } : { width: 11906, height: 16838 }, margin: { top: 1134, bottom: 1134, left: 1134, right: 1134 } } },
+      footers: { default: footer }, children: kids }] });
+}
+function exportWord(doc, vendor) {
+  const D = window.docx;
+  if (!D) { toast("DOCX engine loading. Please check internet connection."); return; }
+  const name = (doc.title + (vendor ? " - " + vendor.name : "")).replace(/[\\/:*?"<>|]/g, "") + ".docx";
+  toast("Generating " + name + "…");
+  D.Packer.toBlob(buildDocx(D, doc, vendor)).then(b => saveFile(name, b, "application/vnd.openxmlformats-officedocument.wordprocessingml.document"), () => toast("Could not generate Word file. Use Copy instead."));
+}
+function copyEl(el) {
+  const html = el.innerHTML, text = el.innerText;
+  try {
+    if (window.ClipboardItem && navigator.clipboard.write) {
+      navigator.clipboard.write([new ClipboardItem({ "text/html": new Blob([html], { type: "text/html" }), "text/plain": new Blob([text], { type: "text/plain" }) })]).then(() => toast("Copied with formatting. Paste into Word or Docs."));
+    } else navigator.clipboard.writeText(text).then(() => toast("Copied to clipboard."));
+  } catch (e) { navigator.clipboard.writeText(text).then(() => toast("Copied.")); }
+}
+function copyText(text) {
+  navigator.clipboard.writeText(text).then(() => toast("Copied to clipboard."));
+}
+function printDoc(el) {
+  const p = $("#printArea"); p.innerHTML = el.innerHTML; document.body.classList.add("printing");
+  try { window.print(); } catch (e) {}
+  setTimeout(() => { document.body.classList.remove("printing"); }, 800);
+}
+function toCSV(rows, cols) {
+  const q = v => '"' + String(v == null ? "" : v).replace(/"/g, '""') + '"';
+  return "﻿" + cols.map(c => q(c.l)).join(",") + "\n" + rows.map(r => cols.map(c => q(r[c.k])).join(",")).join("\n");
+}
+
+/* ---------- Business Presets ---------- */
+function preset(type) {
+  const R = (items, whose, source, purpose, service, basis, storage, access, vendor, retention, erase) => ({ id: uid(), items, whose, source, purpose, service, basis, storage, access, vendor, retention, erase });
+  const staff = R("Name, address, contact, bank account, PAN, Aadhaar (last 4 digits)", "Employees", "Onboarding form", "Payroll, EPFO/ESIC and statutory tax filings", "Employment", "7i", "Encrypted HR sheet", "DPO, Senior Accounts", "[Payroll agency]", "Duration of employment + statutory period", "Certified purge; cross-cut shred");
+  const cctv = R("CCTV footage", "Premises visitors and staff", "Surveillance cameras", "Premises safety and asset protection", "Premises security", "7a", "Local DVR on premises", "Authorized Security Head", "", "30 days rolling", "Automated overwrite");
+  const offers = R("Mobile number, email address", "Consenting customers", "Consent intake form / WhatsApp", "Statutory product notifications and updates", "Communications", "consent", "CRM / WhatsApp Business", "Customer Communications", "[Messaging Vendor]", "Until consent withdrawal", "Purge from active broadcast");
+  const bills = (who) => R("Name, mobile, billing address, GST/PAN", who, "Billing counter", "Invoicing and tax compliance", "Billing", "7a", "Billing software", "Accounts staff", "[Accounting software vendor]", "8 years per GST/Income Tax rules", "Purge record upon statutory expiry");
+  const m = {
+    "Clinic / hospital": [R("Patient name, age, mobile, address", "Patients", "Reception desk", "Registration and contact", "Consultation", "7a", "Clinic software", "Front desk, doctors", "[Software vendor]", "Medical record retention window", "Purge"),
+      R("Medical history, diagnosis, prescriptions, lab reports", "Patients", "Consultation", "Medical treatment & records", "Treatment", "7a", "Clinic software", "Attending doctors", "[Software vendor]", "Per Medical Council guidelines", "Secure purge"),
+      R("Mobile number", "Patients", "Intake form", "Appointment reminders", "Reminders", "consent", "SMS gateway", "Front desk", "[SMS vendor]", "Until consent withdrawal", "Unsubscribe"), bills("Patients"), offers, staff, cctv],
+    "School / coaching": [R("Student name, DOB, class, parent particulars", "Students & parents", "Admission form", "Instruction and academic records", "Education", "7a", "School management system", "Admin, teachers", "[EdTech vendor]", "Academic record retention window", "Purge"),
+      R("Marks, attendance, progress assessments", "Students", "Teachers", "Academic reporting", "Education", "7a", "School management system", "Teachers", "[EdTech vendor]", "Per education board rules", "Purge"),
+      R("Photographs of students", "Students", "Events", "Annual magazine & newsletter", "Publicity", "consent", "Admin system", "Admin", "", "2 academic sessions", "Purge"), bills("Parents"), staff, cctv],
+    "Retail shop": [bills("Customers"), R("Name, mobile, delivery address", "Customers", "Order counter", "Product delivery", "Delivery", "7a", "Billing tool", "Delivery staff", "[Courier partner]", "1 year post delivery", "Purge"), offers, staff, cctv],
+    "Restaurant / café": [R("Name, mobile, delivery address", "Customers", "Ordering portal", "Order fulfillment", "Delivery", "7a", "POS tool", "Counter staff", "[POS vendor]", "1 year", "Purge"), R("Name, mobile, party size", "Customers", "Reservation desk", "Table reservation", "Reservations", "7a", "Reservation book", "Manager", "", "3 months", "Purge"), bills("Customers"), offers, staff, cctv],
+    "Real estate / builder": [R("Name, mobile, email, budget, preferences", "Prospective buyers", "Site visits / website", "Inquiry follow-up", "Inquiries", "7a", "CRM", "Sales team", "[CRM vendor]", "1 year post contact", "Purge"),
+      R("Name, address, PAN, Aadhaar, photographs, bank loan files", "Property buyers", "Booking contract", "Conveyance, registry and title", "Property sale", "7a", "Legal & sales archive", "Legal counsel, accounts", "[Legal counsel]", "Per RERA & property laws", "Secure purge"), offers, staff, cctv],
+    "Online business / startup": [R("Name, email, mobile, password (hashed)", "Users", "Sign-up portal", "Account maintenance", "Account service", "7a", "Cloud database", "Engineering (least privilege)", "[Cloud Host]", "Account duration + 1 year", "Database purge"),
+      R("Payment transaction tokens, address", "Customers", "Checkout", "Payment processing & orders", "Checkout", "7a", "Payment gateway", "Accounts", "[Payment Gateway]", "8 years for tax invoices", "Purge"),
+      R("Device telemetry, analytics", "Users", "Web analytics", "Product optimization", "Analytics", "consent", "Analytics tool", "Product team", "[Analytics vendor]", "14 months", "Automated expiry"), offers, staff],
+    "Professional firm": [R("Client name, address, identity, case files", "Clients", "Engagement letter", "Professional legal/advisory representation", "Professional services", "7a", "Firm repository", "Partners, attending associates", "[Cloud storage]", "Per Bar Council / professional rules", "Purge"), bills("Clients"), staff, cctv],
+  };
+  const rows = m[type] || [bills("Customers"), offers, staff];
+  return S.biz.cctv === "yes" ? rows : rows.filter(r => r !== cctv);
+}
+
+/* ---------- Navigation Architecture with Refined Icons ---------- */
+const NAV_GROUPS = [
+  {
+    title: "OVERVIEW",
+    items: [
+      ["home", "Dashboard", `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>`],
+      ["setup", "Business Setup", `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`]
+    ]
+  },
+  {
+    title: "DATA ARCHITECTURE",
+    items: [
+      ["inventory", "Data Inventory", `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>`],
+      ["vendors", "Data Processors", `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>`]
+    ]
+  },
+  {
+    title: "STATUTORY OPERATIONS",
+    items: [
+      ["steps", "Compliance Roadmap", `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>`],
+      ["docs", "Legal Documents", `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>`],
+      ["registers", "Compliance Registers", `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>`]
+    ]
+  },
+  {
+    title: "GOVERNANCE & LAW",
+    items: [
+      ["calendar", "Maintenance Calendar", `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`],
+      ["help", "Bare Act & Penalties", `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`]
+    ]
+  }
+];
+
+let view = "home", arg = null;
+
+function go(v, a) {
+  if (v.startsWith("doc:")) { arg = v.slice(4); v = "doc"; } else if (v.startsWith("reg:")) { arg = v.slice(4); v = "registers"; } else arg = a || null;
+  view = v; render(); window.scrollTo(0, 0); $("#main").focus({ preventScroll: true });
+}
+function render() {
+  document.querySelectorAll("#nav [data-go]").forEach(b => b.setAttribute("aria-current", b.dataset.go === view || (view === "doc" && b.dataset.go === "docs") ? "page" : "false"));
+  const fn = { home, setup, inventory, vendors, steps, docs: docsList, doc: docView, registers, calendar, help, breach }[view] || home;
+  $("#main").innerHTML = fn();
+  const ab = $("#breachBtn"); ab.classList.toggle("live", !!S.activeBreach); ab.textContent = S.activeBreach ? "Section 8(6) Incident Active" : "Section 8(6) Breach";
+  tick();
+}
+
+/* ---------- Screens ---------- */
+const allSteps = () => DPDP_STEPS.flatMap(p => p.items);
+function progress() { const a = allSteps(); const d = a.filter(i => S.steps[i.id] && S.steps[i.id].done).length; return { d, n: a.length, pct: Math.round(d / a.length * 100) }; }
+function setupScore() { const b = S.biz; const req = ["name", "addr", "officer", "desig", "email", "ph"]; return req.filter(k => b[k] && String(b[k]).trim()).length / req.length; }
+function calDue() { return DPDP_CAL.map(t => { const last = S.cal[t.id]; const next = last ? addDays(last, t.every) : todayISO(); return { ...t, last, next, overdue: daysBetween(todayISO(), next) <= 0 }; }); }
+function rightsDue(r) { return addDays(r.received, Math.min(90, +S.biz.days || 30)); }
+
+function home() {
+  const p = progress(), left = Math.max(0, Math.ceil((DEADLINE - new Date()) / 864e5));
+  const next = allSteps().filter(i => !(S.steps[i.id] && S.steps[i.id].done)).slice(0, 3);
+  const open = S.reg.rights.filter(r => r.status !== "Closed").map(r => ({ ...r, due: rightsDue(r) })).sort((a, b) => a.due < b.due ? -1 : 1);
+  const over = open.filter(r => r.due < todayISO());
+  const cal = calDue().filter(t => t.overdue && S.cal[t.id]);
+  const first = setupScore() < 1;
+
+  return `<header class="pagehead">
+    <div class="hero-chip">
+      <span class="hero-chip-dot"></span>
+      <span>Statutory Compliance Operating System · Act No. 22 of 2023</span>
+    </div>
+    <h1>${S.biz.name ? esc(S.biz.name) : "DPDP Compliance Console"}</h1>
+    <p class="lede">Comprehensive regulatory governance console for Data Fiduciaries under The Digital Personal Data Protection Act, 2023. Developed by Mohd Faiz.</p>
+  </header>
+
+  ${S.activeBreach ? `<div class="alert"><b>Section 8(6) Personal Data Breach Incident Active.</b> <span data-countdown></span> <button class="btn danger sm" data-go="breach">Open Incident Triage</button></div>` : ""}
+
+  <div class="cards3">
+    <!-- Stat 1 -->
+    <div class="card stat">
+      <div class="stat-top-row">
+        <span class="lab">Compliance Completion</span>
+        <span class="stat-badge green">${p.pct}% verified</span>
+      </div>
+      <span class="big">${p.pct}%</span>
+      <div class="bar"><i style="width:${p.pct}%"></i></div>
+      <span class="hint">${p.d} of ${p.n} statutory duties verified</span>
+    </div>
+
+    <!-- Stat 2 -->
+    <div class="card stat">
+      <div class="stat-top-row">
+        <span class="lab">Enforcement Window</span>
+        <span class="stat-badge blue">Target: May 2027</span>
+      </div>
+      <span class="big">${left} <span style="font-size:16px;font-weight:600;color:var(--t3)">days</span></span>
+      <div class="bar" style="background:transparent;height:6px;margin:10px 0 6px"></div>
+      <span class="hint">Target full enforcement date: 13 May 2027</span>
+    </div>
+
+    <!-- Stat 3 -->
+    <div class="card stat">
+      <div class="stat-top-row">
+        <span class="lab">Data Subject Rights</span>
+        <span class="stat-badge ${over.length ? "red" : ""}">${open.length} active</span>
+      </div>
+      <span class="big ${over.length ? "bad" : ""}">${open.length}</span>
+      <div class="bar" style="background:transparent;height:6px;margin:10px 0 6px"></div>
+      <span class="hint">${over.length ? `<span class="bad">⚠️ ${over.length} requests overdue</span>` : "Standard SLA: " + tokens().days + " days statutory window"}</span>
+    </div>
+  </div>
+
+  <section class="card">
+    <div class="cardhead">
+      <h2>${first ? "Getting Started" : "Priority Actions"}</h2>
+      <span class="hint">21-Step bare act compliance milestones</span>
+    </div>
+    ${first ? `<ol class="start">
+      <li><b>Complete Business Setup:</b> Enter your entity particulars, designated DPO, and registered address.</li>
+      <li><b>Build Data Inventory:</b> Map personal data intake, specified purposes, and assign legal grounds (ss. 6 &amp; 7).</li>
+      <li><b>Follow Statutory Roadmap:</b> Complete 21 actionable statutory items with bare-act aligned legal documents.</li>
+    </ol>
+    <button class="btn" data-go="setup">Complete Business Setup</button>` :
+    next.length ? `<ul class="nextlist">${next.map(i => `<li><button class="link" data-go="steps" data-open="${i.id}">${esc(i.t)}</button><span class="law">${esc(i.law)}</span></li>`).join("")}</ul><button class="btn ghost sm" data-go="steps">View Full Compliance Roadmap</button>` : `<p>All scheduled statutory obligations are verified. Maintain recurring review tasks via the Maintenance Calendar.</p>`}
+  </section>
+
+  ${cal.length ? `<section class="card"><h2>Maintenance Tasks Due</h2><ul class="nextlist">${cal.map(t => `<li><button class="link" data-go="calendar">${esc(t.t)}</button><span class="law bad">Due ${fmtD(t.next)}</span></li>`).join("")}</ul></section>` : ""}
+
+  <section class="card">
+    <h2>Direct Quick Actions</h2>
+    <div class="btnrow">
+      <button class="btn ghost sm" data-go="reg:consent"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Log Consent (s.6(10))</button>
+      <button class="btn ghost sm" data-go="reg:rights"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg> Log Rights Request (ss.11-14)</button>
+      <button class="btn ghost sm" data-go="docs"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> Generate Legal Documents</button>
+      <button class="btn ghost sm" data-go="calc"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/></svg> Penalty Calculator (s.33)</button>
+      <button class="btn danger ghost sm" data-go="breach"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/></svg> Section 8(6) Incident Triage</button>
+    </div>
+  </section>
+
+  ${credit()}`;
+}
+function credit() { 
+  return `<aside class="credit-card">
+    <div class="credit-main">
+      <div class="credit-avatar">
+        <span>MF</span>
+        <span class="credit-status-dot" title="Available for Privacy &amp; AI Governance Advisory"></span>
+      </div>
+      <div class="credit-body">
+        <div class="credit-header-row">
+          <span class="credit-name">Mohd Faiz</span>
+          <span class="credit-role-tag">Data Privacy &amp; AI Governance</span>
+        </div>
+        <p class="credit-institution">Faculty of Law, University of Delhi</p>
+        <div class="credit-links">
+          <a class="credit-link-chip" href="mailto:${EMAIL}" title="Email Mohd Faiz">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>${EMAIL}</span>
+          </a>
+          <a class="credit-link-chip" href="${LINKEDIN}" target="_blank" rel="noopener" title="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span>linkedin.com/in/adv-mohd-faiz</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="credit-aside">
+      <span class="credit-caption">Privacy Law &amp; Compliance Advisory</span>
+    </div>
+  </aside>`; 
+}
+
+function field(path, label, opt = {}) {
+  const v = get(path); const id = "f_" + path.replace(/\W/g, "_");
+  const hint = opt.hint ? `<span class="hint">${opt.hint}</span>` : "";
+  if (opt.select) return `<label class="f" for="${id}">${label}<select id="${id}" data-bind="${path}">${opt.select.map(o => { const [val, l] = Array.isArray(o) ? o : [o, o]; return `<option value="${esc(val)}"${String(v) === String(val) ? " selected" : ""}>${esc(l)}</option>`; }).join("")}</select>${hint}</label>`;
+  if (opt.area) return `<label class="f" for="${id}">${label}<textarea id="${id}" data-bind="${path}" rows="2">${esc(v)}</textarea>${hint}</label>`;
+  return `<label class="f" for="${id}">${label}<input id="${id}" data-bind="${path}" type="${opt.type || "text"}" value="${esc(v)}"${opt.min != null ? ` min="${opt.min}"` : ""}${opt.max != null ? ` max="${opt.max}"` : ""} placeholder="${esc(opt.ph || "")}">${hint}</label>`;
+}
+function setup() {
+  return `<header class="pagehead"><h1>Business Setup</h1><p class="lede">Configure entity particulars. All statutory policies, notices, and DPBI regulatory reports will dynamically populate from these parameters.</p></header>
+  <section class="card"><h2>Data Fiduciary Particulars (Section 2(i))</h2><div class="grid2">
+    ${field("biz.name", "Legal Entity Name", { ph: "Acme Technologies Pvt. Ltd." })}
+    ${field("biz.type", "Industry / Business Sector", { select: [["", "Select Sector…"], ...TYPES] })}
+    ${field("biz.addr", "Registered Office Address (with PIN code)", { area: true })}
+    ${field("biz.city", "City (Jurisdiction)", { ph: "New Delhi" })}
+    ${field("biz.web", "Official Website", { ph: "https://www.example.com" })}
+    ${field("biz.noticeUrl", "Public Privacy Notice URL", { ph: "https://www.example.com/privacy", hint: "Published web link where Section 5 notice is accessible." })}
+  </div></section>
+  <section class="card"><h2>Designated Privacy Officer (Section 8(9) &amp; Rule 9)</h2><p class="hint">The designated contact responsible for answering Data Principal queries and managing breach response.</p><div class="grid2">
+    ${field("biz.officer", "Full Name")}${field("biz.desig", "Designation", { ph: "Data Protection Officer / Privacy Counsel" })}
+    ${field("biz.email", "Official Privacy / Grievance Email", { type: "email", ph: "privacy@example.com" })}${field("biz.ph", "Official Telephone / Contact", { type: "tel" })}
+    ${field("biz.backup", "Alternate Incident Lead")}${field("biz.backupPh", "Alternate Contact Phone", { type: "tel" })}
+  </div></section>
+  <section class="card"><h2>Grievance Redressal Mechanism (Section 13)</h2><div class="grid2">
+    ${field("biz.days", "Published Grievance Resolution Window (Days)", { type: "number", min: 1, max: 90, hint: "Rule 14 permits at most 90 days. Standard practice is 30 days." })}
+    ${field("biz.ident", "Authentication Metric for Data Principals", { ph: "Registered mobile number or customer account ID", hint: "Published authentication credential per Rule 14(1)(b)." })}
+    ${field("biz.means", "Authorized Channels for Rights Requests", { ph: "by email to privacy@example.com or via online portal", hint: "Published intake channels per Rule 14(1)(a)." })}
+    ${field("biz.langs", "Notice Languages Offered", { hint: "Section 5(3) mandate: English + Eighth Schedule regional languages." })}
+  </div></section>
+  <section class="card"><h2>Special Processing Categories</h2><div class="grid2">
+    ${field("biz.children", "Do you process personal data of children under 18?", { select: [["no", "No"], ["yes", "Yes"]], hint: "If yes, triggers Section 9 parental consent verification rules." })}
+    ${field("biz.cctv", "Is CCTV surveillance deployed on premises?", { select: [["no", "No"], ["yes", "Yes"]] })}
+    ${field("biz.cctvDays", "CCTV Retention Period (Days)", { type: "number", min: 1, max: 365 })}
+  </div></section>
+  <div class="btnrow"><button class="btn" data-go="inventory">Proceed to Data Inventory →</button></div>`;
+}
+
+function inventory() {
+  const t = S.biz.type;
+  return `<header class="pagehead"><h1>Data Inventory &amp; Mapping</h1><p class="lede">Statutory record of processing activities mapping data items, specified purposes, storage, and retention windows (Sections 4, 5, 6, 8(4)).</p></header>
+  <div class="tip"><b>Legal Ground Guidance:</b> Data provided voluntarily for a requested service operates under Section 7(a). Secondary uses such as marketing, profiling, or sharing require affirmative consent under Section 6. Employee data is processed under Section 7(i).</div>
+  ${!S.inv.length ? `<section class="card"><h2>Sector Presets</h2><p>${t ? "Load verified baseline data mapping for <b>" + esc(t) + "</b>." : "Select your industry sector in Business Setup to load customized data mapping."}</p><button class="btn" data-act="preset">Load Sector Presets</button></section>` : ""}
+  <section class="card"><div class="cardhead"><h2>Mapped Data Categories (${S.inv.length})</h2><button class="btn sm" data-act="invAdd">+ Add Data Item</button></div>
+  <div class="invlist">${S.inv.map(r => invRow(r)).join("") || '<p class="empty">No data categories mapped yet. Load presets above or create a new row.</p>'}</div></section>
+  <div class="btnrow"><button class="btn ghost" data-go="doc:inventorydoc">Download Inventory Report</button><button class="btn" data-go="vendors">Proceed to Data Processors →</button></div>`;
+}
+const INVF = [["items", "Personal Data Categories", "Name, mobile, email"], ["whose", "Data Principals", "Customers / Patients / Users"], ["source", "Intake Source", "Web form / Counter registration"], ["purpose", "Specified Purpose", "Service delivery & billing"], ["service", "Goods / Services Enabled", "Account management"], ["basis", "Statutory Ground"], ["storage", "Storage Infrastructure", "Cloud database (AES-256)"], ["access", "Authorized Personnel", "Customer support (least privilege)"], ["vendor", "Engaged Processor", "AWS / Zoho / Razorpay"], ["retention", "Retention Period", "Account lifespan + 1 year"], ["erase", "Erasure Protocol", "Database purge & processor instruction"]];
+function invRow(r) {
+  return `<details class="inv"${r._open ? " open" : ""}><summary><span class="it">${esc(r.items || "New Data Category")}</span><span class="pill ${r.basis === "consent" ? "c" : ""}">${esc(BASES[r.basis] || "Assign Ground")}</span><span class="pu">${esc(r.purpose || "")}</span></summary>
+  <div class="grid3">${INVF.map(([k, l, ph]) => k === "basis" ? `<label class="f">${l}<select data-inv="${r.id}" data-k="basis">${Object.entries(BASES).map(([v, t]) => `<option value="${v}"${r.basis === v ? " selected" : ""}>${t}</option>`).join("")}</select></label>` :
+    `<label class="f">${l}<input data-inv="${r.id}" data-k="${k}" value="${esc(r[k])}" placeholder="${esc(ph)}"></label>`).join("")}</div>
+  <div class="btnrow end"><button class="btn ghost sm danger" data-act="invDel" data-id="${r.id}">Delete Category</button></div></details>`;
+}
+
+function vendors() {
+  return `<header class="pagehead"><h1>Data Processors (Section 8(2))</h1><p class="lede">Manage third-party service providers processing personal data on your behalf. Section 8(1) holds the Data Fiduciary responsible for processor non-compliance.</p></header>
+  <section class="card"><h2>Register Data Processor</h2><div class="grid2">
+    <label class="f">Processor Legal Name<input id="v_name" placeholder="AWS, Razorpay, Google Cloud, Salesforce…"></label>
+    <label class="f">Processing Service Scope<input id="v_service" placeholder="Cloud infrastructure, payment gateway, CRM…"></label>
+    <label class="f">Personal Data Entrusted<input id="v_data" placeholder="Customer identifiers, billing particulars…"></label>
+    <label class="f">Processing Location / Data Residency<input id="v_location" placeholder="India / Mumbai Region" value="India"></label>
+    <label class="f">Processor Registered Address<input id="v_addr" placeholder="Registered office address"></label></div>
+    <div class="btnrow"><button class="btn" data-act="vAdd">Add Processor</button></div></section>
+  <section class="card"><h2>Engaged Processors (${S.vendors.length})</h2>
+  ${S.vendors.length ? `<div class="tw"><table class="reg"><thead><tr><th>Processor</th><th>Service Scope</th><th>Data Categories</th><th>Residency</th><th>Section 8(2) DPA Execution</th><th></th></tr></thead><tbody>${S.vendors.map(v => `<tr><td><b>${esc(v.name)}</b></td><td>${esc(v.service)}</td><td>${esc(v.data)}</td><td>${esc(v.location)}</td>
+    <td><input type="date" data-vsign="${v.id}" value="${esc(v.signed || "")}" aria-label="DPA Execution Date"></td>
+    <td class="nowrap"><button class="btn sm" data-act="vDoc" data-id="${v.id}">Generate DPA</button> <button class="btn sm ghost danger" data-act="vDel" data-id="${v.id}" aria-label="Delete">✕</button></td></tr>`).join("")}</tbody></table></div>` : '<p class="empty">No processors registered yet.</p>'}
+  <p class="hint">Click <b>Generate DPA</b> to auto-generate a binding Data Processing Agreement tailored to that processor under Section 8(2).</p></section>
+  <div class="btnrow"><button class="btn" data-go="steps">Proceed to Compliance Roadmap →</button></div>`;
+}
+
+let openStep = null;
+function steps() {
+  const p = progress();
+  return `<header class="pagehead"><h1>Statutory Compliance Roadmap</h1><p class="lede">Step-by-step audit plan operationalizing every substantive mandate under Act No. 22 of 2023. Verify obligations, record completion dates, and document audit trails.</p></header>
+  <div class="card stat inline"><span class="lab">${p.d} of ${p.n} Statutory Duties Verified</span><div class="bar"><i style="width:${p.pct}%"></i></div></div>
+  ${DPDP_STEPS.map(ph => `<section class="card"><h2>${esc(ph.phase)}</h2>${ph.items.map(i => { const s = S.steps[i.id] || {};
+    return `<details class="step${s.done ? " done" : ""}"${openStep === i.id ? " open" : ""} data-step="${i.id}"><summary><span class="tick" aria-hidden="true">${s.done ? "✓" : ""}</span><span class="st">${esc(i.t)}</span><span class="law">${esc(i.law)}</span></summary>
+    <div class="stepbody"><ol>${i.how.map(h => `<li>${esc(h)}</li>`).join("")}</ol>
+    <div class="btnrow"><button class="btn sm" data-go="${i.go}">${goLabel(i.go)}</button></div>
+    <div class="grid2 donebox"><label class="f">Verified Completion Date<input type="date" data-stepdone="${i.id}" value="${esc(s.done || "")}"></label>
+    <label class="f">Audit Trail / Document Reference<input data-stepnote="${i.id}" value="${esc(s.note || "")}" placeholder="File reference, board approval date, or 'N/A'"></label></div></div></details>`; }).join("")}</section>`).join("")}
+  <div class="btnrow"><button class="btn ghost" data-go="doc:report">Download Comprehensive Audit Report</button></div>`;
+}
+function goLabel(g) {
+  if (g.startsWith("doc:")) { const d = DPDP_DOCS.find(x => x.id === g.slice(4)); return "Open Document: " + (d ? d.title : "Document"); }
+  if (g.startsWith("reg:")) return "Open Register: " + (REG[g.slice(4)] || {}).t;
+  return "Navigate to: " + (NAV_ITEMS_MAP[g] || g);
+}
+
+function docsList() {
+  const groups = [...new Set(DPDP_DOCS.map(d => d.group))];
+  return `<header class="pagehead">
+    <div class="hero-chip"><span class="hero-chip-dot"></span><span>Legal Document Factory · Bare Act Aligned</span></div>
+    <h1>Statutory Documents &amp; Policy Generator</h1>
+    <p class="lede">Legally verified documentation templates tailored to your business parameters. Export directly as formatted Word (.docx) documents, copy formatted text, or print.</p>
+  </header>
+  ${setupScore() < 1 ? `<div class="tip">Some business details are unconfigured. Complete Business Setup to eliminate bracketed placeholders in generated documents. <button class="link" data-go="setup">Complete Setup →</button></div>` : ""}
+  ${groups.map(g => `
+    <section class="card">
+      <div class="cardhead">
+        <h2>${esc(g)}</h2>
+        <span class="hint">${DPDP_DOCS.filter(d => d.group === g).length} statutory templates</span>
+      </div>
+      <ul class="doclist">
+        ${DPDP_DOCS.filter(d => d.group === g).map(d => `
+          <li>
+            <button class="docbtn" data-go="doc:${d.id}" title="Open ${esc(d.title)}">
+              <div class="docbtn-header">
+                <b>${esc(d.title)}</b>
+                <span class="docbtn-arrow">→</span>
+              </div>
+              <span class="when">${esc(d.when)}</span>
+              <div class="law-tag-wrap">
+                <span class="law">${esc(d.law)}</span>
+              </div>
+            </button>
+          </li>
+        `).join("")}
+      </ul>
+    </section>
+  `).join("")}`;
+}
+function docView() {
+  const d = DPDP_DOCS.find(x => x.id === arg) || DPDP_DOCS[0];
+  let v = null, pick = "";
+  if (d.perVendor) {
+    const vid = docView._v && S.vendors.find(x => x.id === docView._v) ? docView._v : (S.vendors[0] && S.vendors[0].id);
+    v = S.vendors.find(x => x.id === vid) || null;
+    pick = `<label class="f inl" style="font-size:12.5px;">Processor:<select data-act="pickVendor">${S.vendors.length ? S.vendors.map(x => `<option value="${x.id}"${v && x.id === v.id ? " selected" : ""}>${esc(x.name)}</option>`).join("") : '<option value="">No Processors Mapped</option>'}</select></label>`;
+  }
+  return `<div class="doc-nav-bar">
+    <button class="back-tab-btn" data-go="docs" title="Return to Document Directory">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      <span>← Back to Document Directory</span>
+    </button>
+    <div class="doc-nav-meta">
+      <span class="doc-group-badge">${esc(d.group)}</span>
+      <span class="doc-law-badge">${esc(d.law)}</span>
+    </div>
+  </div>
+  <header class="pagehead" style="margin-bottom:14px;">
+    <h1 style="font-size:24px;font-weight:800;letter-spacing:-0.03em;margin-bottom:6px;">${esc(d.title)}</h1>
+    <div style="font-size:12px;color:var(--t3);font-family:var(--mono);line-height:1.5;background:var(--surface-2);display:inline-block;padding:4px 10px;border-radius:6px;border:1px solid var(--bd);">
+      Statutory Citation: ${esc(d.law)}
+    </div>
+  </header>
+  <div class="tip"><b>Statutory Guidance:</b> ${esc(d.when)}</div>
+  <div class="docbar">${pick}<button class="btn sm" data-act="dWord"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Export Word (.docx)</button><button class="btn sm ghost" data-act="dCopy"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy Text</button><button class="btn sm ghost" data-act="dPrint"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg> Print Document</button></div>
+  <article class="paper${d.te ? " te" : ""}${d.landscape ? " wide" : ""}" id="paper">${docHTML(d, v)}</article>`;
+}
+
+/* ---------- Registers ---------- */
+const REG = {
+  consent: { t: "Consent Log", law: "Section 6(10)", intro: "Statutory proof of notice and consent. Retain to discharge burden of proof before the Data Protection Board.",
+    f: [["date", "Date Recorded", "date"], ["name", "Data Principal Name"], ["contact", "Mobile / Email"], ["purposes", "Specified Consents"], ["channel", "Intake Channel", ["Physical Form", "Website", "Mobile App", "WhatsApp", "Regional Form"]], ["lang", "Notice Language", ["English", "Hindi", "Telugu", "Other"]], ["child", "Minor / Ward? (s.9)", ["No", "Yes"]], ["by", "Logged By"]] },
+  withdrawal: { t: "Consent Withdrawal Log", law: "Section 6(4)–(6), Section 8(7)", intro: "Record consent revocations. Cease processing within reasonable timeframe and notify processors.",
+    f: [["date", "Received Date", "date"], ["name", "Data Principal Name"], ["contact", "Mobile / Email"], ["purposes", "Consents Revoked"], ["stopped", "Processing Ceased", "date"], ["vendors", "Processors Notified", "date"], ["erased", "Erasure Date / Legal Retention"], ["by", "Processed By"]] },
+  rights: { t: "Data Principal Requests & Grievances", law: "Sections 11–14, Rule 14", intro: "Track statutory rights requests and complaints. System flags requests approaching statutory deadlines.",
+    f: [["received", "Date Received", "date"], ["name", "Data Principal Name"], ["contact", "Mobile / Email"], ["type", "Statutory Right", ["Access (Section 11)", "Correction / Updating (Section 12)", "Erasure (Section 12)", "Nomination (Section 14)", "Grievance Redressal (Section 13)", "Consent Withdrawal (Section 6)"]], ["verified", "Identity Authenticated?", ["Pending", "Verified"]], ["status", "Status", ["Open", "Responded", "Closed"]], ["notes", "Action Summary"]] },
+  erasure: { t: "Statutory Erasure Log", law: "Section 8(7), Section 12(3)", intro: "Audit log of permanent data destructions executed upon consent withdrawal or purpose fulfillment.",
+    f: [["date", "Execution Date", "date"], ["what", "Categories Purged"], ["reason", "Statutory Ground", ["Consent Withdrawal", "Data Principal Request", "Purpose Served (s.8(7))", "Retention Expired"]], ["systems", "Databases & Processors Purged"], ["by", "Verified By"]] },
+  training: { t: "Staff Training & Undertakings", law: "Section 8(4), Section 8(5)", intro: "Maintain records of employee security briefings and executed confidentiality undertakings.",
+    f: [["name", "Employee Name"], ["role", "Designation"], ["date", "Briefing Date", "date"], ["signed", "Undertaking Executed?", ["Yes", "No"]], ["by", "Briefed By"]] },
+  logreview: { t: "Security Log Audit Records", law: "Rule 6(1)(c), Rule 8(3)", intro: "Monthly reviews of administrative access, export logs, and anomalous activity.",
+    f: [["date", "Review Date", "date"], ["systems", "Infrastructure Audited"], ["unusual", "Anomalous Activity Observed?", ["No", "Yes"]], ["action", "Remedial Actions"], ["by", "Audited By"]] },
+  breach: { t: "Section 8(6) Breach Register", law: "Section 8(6), Rule 7", intro: "Formal audit register of closed incident investigations and regulatory intimations.", ro: true,
+    f: [["aware", "Discovery Timestamp"], ["what", "Incident Summary"], ["affected", "Principals Affected"], ["boardInit", "Board Intimated"], ["personsInf", "Principals Intimated"], ["report72", "72h Report Filed"], ["closed", "Closed Date"]] },
+};
+let regTab = "consent";
+function registers() {
+  if (arg && REG[arg]) { regTab = arg; arg = null; }
+  const R = REG[regTab], rows = S.reg[regTab];
+  return `<header class="pagehead"><h1>Statutory Compliance Registers</h1><p class="lede">Audit trails and evidence registers establishing institutional compliance before regulatory authorities.</p></header>
+  <div class="tabs" role="tablist">${Object.entries(REG).map(([k, r]) => `<button role="tab" aria-selected="${k === regTab}" data-act="regTab" data-id="${k}">${esc(r.t)} <span class="cnt">${S.reg[k].length}</span></button>`).join("")}</div>
+  <div class="tip"><b>${esc(R.t)}</b> · ${esc(R.law)}. ${esc(R.intro)}</div>
+  ${R.ro ? "" : `<section class="card"><h2>New Register Entry</h2><div class="grid3" id="regform">${R.f.map(([k, l, t]) => Array.isArray(t) ? `<label class="f">${l}<select data-rf="${k}">${t.map(o => `<option>${esc(o)}</option>`).join("")}</select></label>` :
+    `<label class="f">${l}<input data-rf="${k}" type="${t || "text"}"${t === "date" ? ` value="${todayISO()}"` : ""}></label>`).join("")}</div><div class="btnrow"><button class="btn sm" data-act="regAdd">+ Add Entry</button></div></section>`}
+  <section class="card"><div class="cardhead"><h2>Logged Records (${rows.length})</h2>${rows.length ? `<button class="btn sm ghost" data-act="regCSV">Export Spreadsheet (CSV)</button>` : ""}</div>
+  ${rows.length ? `<div class="tw"><table class="reg"><thead><tr><th>ID</th>${R.f.map(f => `<th>${esc(f[1])}</th>`).join("")}${regTab === "rights" ? "<th>Statutory Deadline</th>" : ""}<th></th></tr></thead><tbody>
+    ${rows.slice().reverse().map(r => { const due = regTab === "rights" ? rightsDue(r) : null; const late = due && r.status !== "Closed" && due < todayISO();
+      return `<tr${late ? ' class="late"' : ""}><td class="mono2">${esc(r.no)}</td>${R.f.map(([k, , t]) => `<td>${t === "date" ? fmtD(r[k]) : esc(r[k])}</td>`).join("")}${regTab === "rights" ? `<td class="nowrap">${fmtD(due)}${late ? " · OVERDUE" : ""}</td>` : ""}
+      <td class="nowrap">${regTab === "rights" ? `<button class="btn sm" data-act="reply" data-id="${r.id}">Draft Reply</button> ` : ""}${regTab === "rights" && r.status !== "Closed" ? `<button class="btn sm ghost" data-act="close" data-id="${r.id}">Mark Closed</button> ` : ""}<button class="btn sm ghost danger" data-act="regDel" data-id="${r.id}" aria-label="Delete">✕</button></td></tr>`; }).join("")}</tbody></table></div>` : '<p class="empty">No entries logged in this register.</p>'}
+  </section><div id="replyBox"></div>`;
+}
+function replyText(r) {
+  const T = tokens(), due = fmtD(rightsDue(r)), ty = r.type || "";
+  const head = "Dear " + (r.name || "Data Principal") + ",\n";
+  const tail = "\n\nReference ID: " + r.no + "\nFor inquiries regarding this matter, contact: " + T.contact + " pursuant to Rule 9.";
+  const ack = head + "We acknowledge receipt of your statutory data request dated " + fmtD(r.received) + ". Our final response will be issued on or before " + due + " in accordance with our published grievance timeframe of " + T.days + " days." + tail;
+  let main;
+  if (/Access/.test(ty)) main = head + "Pursuant to Section 11 of the Digital Personal Data Protection Act, 2023:\n1. Categories of personal data processed: [Detail categories].\n2. Processing purposes & activities: [Describe storage/handling].\n3. Data Processors engaged: " + (S.vendors.map(v => v.name + " (" + (v.service || "Processor") + ")").join("; ") || "[No third parties engaged]") + ".\nYou may seek correction or erasure under Section 12 or approach the Data Protection Board of India under Section 13(3)." + tail;
+  else if (/Correction/.test(ty)) main = head + "Pursuant to Section 12(2), we have updated/corrected your personal data in our active systems and notified all Data Processors." + tail;
+  else if (/Erasure/.test(ty)) main = head + "Pursuant to Section 12(3) and Section 8(7), your personal data has been erased from active records and processors notified. [If statutory retention applies, cite governing tax/corporate statute]." + tail;
+  else if (/Nomination/.test(ty)) main = head + "Pursuant to Section 14, we have recorded your formal nomination of [Nominee Name] to exercise statutory rights on your behalf." + tail;
+  else if (/Withdrawal/.test(ty)) main = head + "Pursuant to Section 6(4) and 6(6), we have ceased processing your personal data for the designated purposes and instructed all Data Processors." + tail;
+  else main = head + "This refers to your grievance registered under Section 13 on " + fmtD(r.received) + ". After investigation: [State findings and corrective action]. If unresolved, you may lodge a complaint with the Data Protection Board of India." + tail;
+  return { ack, main };
+}
+
+/* ---------- Breach Response ---------- */
+function breach() {
+  const b = S.activeBreach;
+  if (!b) return `<header class="pagehead"><h1>Section 8(6) Breach Incident Workflow</h1><p class="lede">Initiate incident triage immediately upon discovering personal data breach. The engine tracks statutory countdowns and generates mandatory intimation notices.</p></header>
+  <div class="alert"><b>Immediate Containment Duty (Section 8(5)):</b> Isolate compromised systems, revoke authentication tokens, and preserve forensic logs. Do not alter raw audit trails.</div>
+  <section class="card"><h2>Incident Intake Particulars</h2><div class="grid2">
+    <label class="f">Discovery Timestamp<input type="datetime-local" id="b_aware" value="${nowLocal()}"><span class="hint">The 72-hour regulatory reporting clock under Rule 7 runs from this moment.</span></label>
+    <label class="f">Estimated Time of Occurrence<input id="b_when" placeholder="e.g. 24 October 2026 23:00 IST"></label>
+    <label class="f">Factual Incident Description<textarea id="b_what" rows="3" placeholder="Describe compromise to confidentiality, integrity, or availability..."></textarea></label>
+    <label class="f">Personal Data Categories Compromised<textarea id="b_data" rows="3" placeholder="e.g. Customer names, mobile numbers, financial records..."></textarea></label>
+    <label class="f">Estimated Data Principals Affected<input id="b_count" type="number" min="0" placeholder="e.g. 5000"></label>
+    <label class="f">System / Vendor Location<input id="b_where" placeholder="e.g. Cloud API Endpoint / CRM SaaS Provider"></label>
+    <label class="f">Assessed Harm Potential (s.33(2))<input id="b_impact" placeholder="e.g. Identity fraud risk, financial exposure, phishing"></label></div>
+    <div class="btnrow"><button class="btn danger" data-act="bStart">Initiate Section 8(6) Response Timer</button></div></section>`;
+  
+  const due = new Date(new Date(b.aware).getTime() + 72 * 3600e3);
+  const T = tokens();
+  const STEPS = [
+    ["contain", "Incident contained: systems isolated, credentials revoked", "Section 8(5)"],
+    ["assess", "Impact assessed: data categories and volume quantified", "Section 2(u), s.33(2)"],
+    ["boardInit", "Initial Intimation dispatched to Board without delay (Form A)", "Section 8(6) · Rule 7"],
+    ["personsInf", "Intimation dispatched to affected Data Principals without delay (Form C)", "Section 8(6)"],
+    ["report72", "Comprehensive 72-hour report submitted to Board (Form B)", "Section 8(6) · Rule 7"],
+    ["review", "Remedial measures completed, security policy updated, audit logged", "Section 8(4)"]
+  ];
+  
+  const formA = `FORMAL INTIMATION OF PERSONAL DATA BREACH TO THE DATA PROTECTION BOARD OF INDIA
+Under Section 8(6) of The Digital Personal Data Protection Act, 2023 read with Rule 7
+
+To: The Data Protection Board of India [Section 18]
+Data Fiduciary: ${T.co}, ${T.addr}
+Authorized Contact: ${T.contact}
+
+1. Discovery Timestamp : ${fmtDT(b.aware)}
+2. Occurrence Time     : ${b.when || "[Under investigation]"}
+3. Nature of Breach    : ${b.what || "[Factual summary]"}
+4. Data Compromised    : ${b.data || "[Categories]"}; approximately ${b.count || "[Count]"} Data Principals
+5. Location / System   : ${b.where || "[Infrastructure location]"}
+6. Assessed Impact     : ${b.impact || "[Harm assessment under Section 33(2)]"}
+7. Containment Actions : Systems isolated; forensic audit initiated.
+
+Submitted pursuant to Section 8(6) of Act No. 22 of 2023.`;
+
+  const formB = `COMPREHENSIVE 72-HOUR REGULATORY BREACH REPORT
+Submitted to the Data Protection Board of India under Section 8(6) read with Rule 7
+
+Data Fiduciary: ${T.co}
+Discovery Date: ${fmtDT(b.aware)}
+
+1. Detailed Description & Root Cause:
+   ${b.what || "[Detail events leading to breach]"}
+   Personal Data Involved: ${b.data || "[Data]"}
+   Total Data Principals Impacted: ${b.count || "[Count]"}
+
+2. Mitigation & Remedial Actions Taken (Section 33(2)(e)):
+   [Detail containment, vulnerability patching, credential rotation]
+
+3. Findings Regarding Breach Actor:
+   [Detail external actor / insider threat / technical failure]
+
+4. Data Principal Intimations (Section 8(6)):
+   [State number of individuals notified and communication channels used]
+
+5. Long-Term Preventative Measures (Section 8(4)):
+   [Detail architectural enhancements, policy revisions, staff training]
+
+Declaration: Verified true and accurate to the best of knowledge.
+Authorized Signatory: ${T.contact}`;
+
+  const formC = `STATUTORY BREACH INTIMATION TO DATA PRINCIPAL
+Issued pursuant to Section 8, Sub-section (6) of The Digital Personal Data Protection Act, 2023
+
+Dear [Data Principal Name],
+
+We are writing to provide you with mandatory intimation under Section 8(6) of the DPDP Act 2023 regarding a security incident affecting systems maintained by or for ${T.co}.
+
+• What Occurred: ${b.what || "[Incident summary]"} (${b.when || "[Date]"}).
+• Personal Data Involved: ${b.data || "[Categories of data]"}.
+• Potential Impact: ${b.impact || "[Potential harm]"}.
+• Actions Taken by Fiduciary: Systems secured, credentials revoked, Data Protection Board formally intimated.
+• Recommended Protective Steps: Monitor financial statements, remain vigilant against phishing, update passwords where credentials were reused.
+
+Grievance Redressal / Contact:
+${T.officer}, ${T.desig}, ${T.ph}, ${T.email}
+Address: ${T.addr}`;
+
+  const formD = `APPLICATION FOR EXTENSION OF 72-HOUR FILING WINDOW
+To: The Data Protection Board of India
+
+Re: Notice of Personal Data Breach discovered on ${fmtDT(b.aware)} by ${T.co}.
+We request a formal extension of the 72-hour filing deadline under Rule 7 to submit our comprehensive report due to [State technical/forensic reasons]. Interim forensic findings are attached.
+${T.contact}`;
+
+  const form = (id, title, txt, note) => `<section class="card"><div class="cardhead"><h2>${title}</h2><button class="btn sm ghost" data-act="copyPre" data-id="${id}">Copy Notice</button></div>${note ? `<p class="hint">${note}</p>` : ""}<pre class="pre" id="${id}">${esc(txt)}</pre></section>`;
+  
+  return `<header class="pagehead"><h1>Section 8(6) Breach Response Workflow</h1><p class="lede">Discovery registered: ${fmtDT(b.aware)}. Track regulatory countdowns and execute required statutory notifications.</p></header>
+  <div class="clock"><span class="lab">Mandatory 72-Hour Board Filing Window Expires: ${due.toLocaleString("en-IN", { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" })}</span><span class="big" data-countdown></span></div>
+  <section class="card"><h2>Statutory Response Checklist</h2><ul class="bsteps">${STEPS.map(([k, t, l]) => `<li><label><input type="checkbox" data-bstep="${k}"${b.steps && b.steps[k] ? " checked" : ""}> <span>${esc(t)}</span></label><span class="law">${l}${b.steps && b.steps[k] ? " · " + fmtDT(b.steps[k]) : ""}</span></li>`).join("")}</ul></section>
+  ${form("fA", "Form A: Initial Intimation to the Board (Section 8(6))", formA, "Dispatch to DPBI without delay.")}
+  ${form("fC", "Form C: Statutory Intimation to Data Principals (Section 8(6))", formC, "Dispatch to all affected individuals without delay.")}
+  ${form("fB", "Form B: Comprehensive 72-Hour Regulatory Report", formB, "Submit to Board within 72 hours of discovery.")}
+  ${form("fD", "Form D: Application for Deadline Extension", formD, "Submit before 72-hour window expires if technical triage is active.")}
+  <div class="btnrow"><button class="btn" data-act="bClose">Mark Incident Resolved &amp; Save to Register</button></div>`;
+}
+function tick() {
+  const els = document.querySelectorAll("[data-countdown]"); if (!els.length || !S.activeBreach) return;
+  const ms = new Date(S.activeBreach.aware).getTime() + 72 * 3600e3 - Date.now();
+  const txt = ms <= 0 ? "72-hour window expired — submit Form B immediately" : Math.floor(ms / 3600e3) + "h " + Math.floor(ms % 3600e3 / 6e4) + "m remaining for Section 8(6) filing";
+  els.forEach(e => { e.textContent = txt; e.classList.toggle("bad", ms < 12 * 3600e3); });
+}
+setInterval(tick, 30000);
+
+/* ---------- Maintenance Calendar ---------- */
+function calendar() {
+  return `<header class="pagehead"><h1>Maintenance &amp; Audit Calendar</h1><p class="lede">Continuous compliance schedule for recurring audits, access rights reviews, and statutory data erasures.</p></header>
+  <section class="card"><table class="reg cal"><thead><tr><th>Statutory Maintenance Duty</th><th>Frequency</th><th>Last Verified</th><th>Next Audit Due</th><th></th></tr></thead><tbody>
+  ${calDue().map(t => `<tr${t.overdue && t.last ? ' class="late"' : ""}><td><button class="link" data-go="${t.go}">${esc(t.t)}</button></td><td>${t.every === 7 ? "Weekly" : t.every === 30 ? "Monthly" : t.every === 91 ? "Quarterly" : t.every === 182 ? "Bi-annual" : "Annual"}</td><td>${t.last ? fmtD(t.last) : "Unverified"}</td><td>${t.last ? fmtD(t.next) : "Due Now"}</td><td><button class="btn sm" data-act="calDone" data-id="${t.id}">Mark Verified Today</button></td></tr>`).join("")}</tbody></table></section>
+  <section class="card"><h2>Event-Driven Compliance Triggers</h2><table class="reg"><tbody>
+    <tr><th>Personnel Separation</th><td>Revoke all system and email credentials on final working day (Section 8(5)). Recover all company devices.</td></tr>
+    <tr><th>New Data Processor</th><td>Execute Section 8(2) DPA, verify technical safeguards, and configure 1-year log retention before granting access.</td></tr>
+    <tr><th>Minor's Data Processing</th><td>Verify guardian identity and secure verifiable consent prior to intake (Section 9).</td></tr>
+    <tr><th>Rights Request Received</th><td>Log in Rights Register; dispatch acknowledgement and satisfy request within ${esc(tokens().days)} days.</td></tr>
+    <tr><th>Suspected Security Breach</th><td>Trigger Section 8(6) Incident Workflow immediately.</td></tr></tbody></table></section>`;
+}
+
+/* ---------- Bare Act & Penalties Reference ---------- */
+function help() {
+  return `<header class="pagehead"><h1>Statutory Reference &amp; Penalties</h1><p class="lede">Authoritative reference to The Digital Personal Data Protection Act, 2023 (Act No. 22 of 2023, published in the Gazette of India Extraordinary, 11 August 2023).</p></header>
+  <section class="card"><h2>The Schedule [See Section 33(1)] — Statutory Penalty Limits</h2><table class="reg"><thead><tr><th>Sl. No.</th><th>Breach of Provisions of this Act or Rules</th><th>Enabling Section</th><th>Maximum Monetary Penalty</th></tr></thead><tbody>
+    <tr><td class="mono2">1.</td><td>Breach in observing obligation of Data Fiduciary to take reasonable security safeguards to prevent personal data breach under sub-section (5) of section 8.</td><td class="mono2">Section 8(5)</td><td class="bad"><b>May extend to ₹250 Crore</b></td></tr>
+    <tr><td class="mono2">2.</td><td>Breach in observing obligation to give the Board or affected Data Principal notice of a personal data breach under sub-section (6) of section 8.</td><td class="mono2">Section 8(6)</td><td class="bad"><b>May extend to ₹200 Crore</b></td></tr>
+    <tr><td class="mono2">3.</td><td>Breach in observance of additional obligations in relation to children under section 9.</td><td class="mono2">Section 9</td><td class="bad"><b>May extend to ₹200 Crore</b></td></tr>
+    <tr><td class="mono2">4.</td><td>Breach in observance of additional obligations of Significant Data Fiduciary under section 10.</td><td class="mono2">Section 10</td><td class="bad"><b>May extend to ₹150 Crore</b></td></tr>
+    <tr><td class="mono2">5.</td><td>Breach in observance of duties under section 15.</td><td class="mono2">Section 15</td><td>May extend to ₹10,000</td></tr>
+    <tr><td class="mono2">6.</td><td>Breach of any term of voluntary undertaking accepted by the Board under section 32.</td><td class="mono2">Section 32</td><td>Up to extent under Section 28</td></tr>
+    <tr><td class="mono2">7.</td><td>Breach of any other provision of this Act or the rules made thereunder.</td><td class="mono2">Residual</td><td class="bad"><b>May extend to ₹50 Crore</b></td></tr></tbody></table>
+    <p class="hint" style="margin-top:10px;"><b>Statutory Quantum Factors (Section 33(2)):</b> In determining penalty amounts, the Board considers breach gravity and duration (a), data category sensitivity (b), repetition (c), financial gain or avoided loss (d), mitigation actions and timeliness (e), proportionality (f), and financial impact on the person (g).</p></section>
+  <section class="card"><h2>Core Statutory Definitions (Section 2)</h2><table class="reg"><tbody>
+    <tr><th>Section 2(i) · Data Fiduciary</th><td>Any person who alone or in conjunction with other persons determines the purpose and means of processing of personal data.</td></tr>
+    <tr><th>Section 2(j) · Data Principal</th><td>The individual to whom personal data relates; where such individual is a child, includes parents or lawful guardian.</td></tr>
+    <tr><th>Section 2(k) · Data Processor</th><td>Any person who processes personal data on behalf of a Data Fiduciary.</td></tr>
+    <tr><th>Section 2(u) · Personal Data Breach</th><td>Any unauthorized processing of personal data or accidental disclosure, acquisition, sharing, use, alteration, destruction or loss of access to personal data, that compromises confidentiality, integrity or availability.</td></tr>
+    <tr><th>Section 2(f) · Child</th><td>An individual who has not completed the age of eighteen years.</td></tr></tbody></table></section>
+  <section class="card"><h2>Data Backup &amp; Portability</h2><p>All institutional data and registers are stored locally in your browser (LocalStorage). Export monthly backups to maintain external disaster recovery records.</p>
+    <div class="btnrow"><button class="btn sm" data-act="backup">Export JSON Data Backup</button><label class="btn sm ghost">Restore from Backup<input type="file" id="restore" accept="application/json,.json" hidden></label><button class="btn sm ghost danger" data-act="wipe">Clear Local Data</button></div></section>
+  ${credit()}`;
+}
+
+/* ---------- Global Event Listeners ---------- */
+document.addEventListener("click", (e) => {
+  const g = e.target.closest("[data-go]");
+  if (g) { e.preventDefault(); if (g.dataset.open) openStep = g.dataset.open; closeNav(); go(g.dataset.go); return; }
+  const b = e.target.closest("[data-act]"); if (!b || b.tagName === "SELECT") return;
+  const id = b.dataset.id, act = b.dataset.act;
+  if (act === "preset") { S.inv = preset(S.biz.type); save(); render(); toast("Sector presets loaded."); }
+  else if (act === "invAdd") { S.inv.push({ id: uid(), basis: "7a", _open: true }); save(); render(); }
+  else if (act === "invDel") { S.inv = S.inv.filter(r => r.id !== id); save(); render(); }
+  else if (act === "vAdd") { const v = { id: uid() }; ["name", "service", "data", "location", "addr"].forEach(k => v[k] = ($("#v_" + k).value || "").trim()); if (!v.name) { toast("Enter Processor Name."); return; } S.vendors.push(v); save(); render(); toast(v.name + " registered."); }
+  else if (act === "vDel") { S.vendors = S.vendors.filter(v => v.id !== id); save(); render(); }
+  else if (act === "vDoc") { docView._v = id; go("doc:dpa"); }
+  else if (act === "dWord") { const d = DPDP_DOCS.find(x => x.id === arg); exportWord(d, d.perVendor ? S.vendors.find(x => x.id === (docView._v || (S.vendors[0] || {}).id)) : null); }
+  else if (act === "dCopy") copyEl($("#paper"));
+  else if (act === "dPrint") printDoc($("#paper"));
+  else if (act === "regTab") { regTab = id; render(); }
+  else if (act === "regAdd") {
+    const r = { id: uid() }; document.querySelectorAll("#regform [data-rf]").forEach(i => r[i.dataset.rf] = i.value.trim());
+    const pre = { consent: "C", withdrawal: "W", rights: "R", erasure: "E", training: "T", logreview: "L" }[regTab];
+    r.no = pre + "-" + String(S.reg[regTab].length + 1).padStart(4, "0");
+    S.reg[regTab].push(r); save(); render(); toast("Logged under Record ID: " + r.no);
+    if (regTab === "rights") showReply(r, true);
+  }
+  else if (act === "regDel") { S.reg[regTab] = S.reg[regTab].filter(r => r.id !== id); save(); render(); }
+  else if (act === "regCSV") { const R = REG[regTab]; saveFile(R.t + ".csv", toCSV(S.reg[regTab], [{ k: "no", l: "ID" }, ...R.f.map(f => ({ k: f[0], l: f[1] }))])); }
+  else if (act === "reply") showReply(S.reg.rights.find(r => r.id === id));
+  else if (act === "close") { const r = S.reg.rights.find(x => x.id === id); r.status = "Closed"; save(); render(); }
+  else if (act === "copyPre") copyText($("#" + id).textContent);
+  else if (act === "bStart") {
+    const v = k => ($("#b_" + k).value || "").trim();
+    if (!v("aware")) { toast("Enter discovery timestamp."); return; }
+    S.activeBreach = { id: uid(), aware: v("aware"), when: v("when"), what: v("what"), data: v("data"), count: v("count"), where: v("where"), impact: v("impact"), steps: {} }; save(); render();
+  }
+  else if (act === "bClose") {
+    const b = S.activeBreach, s = b.steps || {};
+    S.reg.breach.push({ id: b.id, no: "B-" + String(S.reg.breach.length + 1).padStart(4, "0"), aware: fmtDT(b.aware), what: b.what, affected: b.count, boardInit: s.boardInit ? fmtDT(s.boardInit) : "No", personsInf: s.personsInf ? fmtDT(s.personsInf) : "No", report72: s.report72 ? fmtDT(s.report72) : "No", closed: fmtD(todayISO()) });
+    S.activeBreach = null; save(); go("reg:breach"); toast("Incident closed and recorded in Breach Register.");
+  }
+  else if (act === "calDone") { S.cal[id] = todayISO(); save(); render(); }
+  else if (act === "backup") saveFile("DPDP_Suite_Backup_" + todayISO() + ".json", JSON.stringify(S, null, 1), "application/json");
+  else if (act === "wipe") { if (b.dataset.sure) { S = blank(); save(); go("home"); toast("Local database purged."); } else { b.dataset.sure = "1"; b.textContent = "Confirm Database Purge"; setTimeout(() => { if (b.isConnected) { delete b.dataset.sure; b.textContent = "Clear Local Data"; } }, 4000); } }
+});
+
+function showReply(r, ackOnly) {
+  const { ack, main } = replyText(r);
+  $("#replyBox").innerHTML = `<section class="card"><div class="cardhead"><h2>Acknowledgement Notice · ${esc(r.no)}</h2><button class="btn sm ghost" data-act="copyPre" data-id="rA">Copy Text</button></div><pre class="pre" id="rA">${esc(ack)}</pre></section>` +
+    (ackOnly ? "" : `<section class="card"><div class="cardhead"><h2>Statutory Response · ${esc(r.type)}</h2><button class="btn sm ghost" data-act="copyPre" data-id="rM">Copy Text</button></div><p class="hint">Verify brackets, dispatch to registered contact, and mark request Closed.</p><pre class="pre" id="rM">${esc(main)}</pre></section>`);
+  $("#replyBox").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+document.addEventListener("input", (e) => {
+  const t = e.target;
+  if (t.dataset.bind) { let v = t.value; if (t.type === "number") v = v === "" ? "" : +v; if (t.dataset.bind === "biz.days" && v > 90) { v = 90; t.value = 90; toast("Maximum statutory window is 90 days."); } set(t.dataset.bind, v); }
+  else if (t.dataset.inv) { const r = S.inv.find(x => x.id === t.dataset.inv); if (r) { r[t.dataset.k] = t.value; delete r._open; save(); const sum = t.closest("details").querySelector("summary"); if (t.dataset.k === "items") sum.querySelector(".it").textContent = t.value || "New Data Category"; if (t.dataset.k === "purpose") sum.querySelector(".pu").textContent = t.value; } }
+  else if (t.dataset.stepnote) { const s = S.steps[t.dataset.stepnote] = S.steps[t.dataset.stepnote] || {}; s.note = t.value; save(); }
+});
+
+document.addEventListener("change", (e) => {
+  const t = e.target;
+  if (t.dataset.k === "basis") { const r = S.inv.find(x => x.id === t.dataset.inv); r.basis = t.value; r._open = true; save(); render(); }
+  else if (t.dataset.bind === "biz.type" && !S.inv.length) { render(); }
+  else if (t.dataset.stepdone) { const s = S.steps[t.dataset.stepdone] = S.steps[t.dataset.stepdone] || {}; s.done = t.value; openStep = t.dataset.stepdone; save(); render(); }
+  else if (t.dataset.vsign) { const v = S.vendors.find(x => x.id === t.dataset.vsign); v.signed = t.value; save(); }
+  else if (t.dataset.act === "pickVendor") { docView._v = t.value; render(); }
+  else if (t.dataset.bstep) { const b = S.activeBreach; b.steps = b.steps || {}; b.steps[t.dataset.bstep] = t.checked ? new Date().toISOString() : null; save(); render(); }
+  else if (t.id === "restore" && t.files[0]) {
+    const fr = new FileReader(); fr.onload = () => { try { const x = JSON.parse(fr.result); if (!x.biz) throw 0; S = merge(blank(), x); save(); go("home"); toast("Backup restored."); } catch (er) { toast("Invalid backup file."); } }; fr.readAsText(t.files[0]);
+  }
+});
+
+document.addEventListener("toggle", (e) => { const d = e.target; if (d.dataset && d.dataset.step && d.open) openStep = d.dataset.step; }, true);
+
+/* ---------- Shell & Theme ---------- */
+function closeNav() { document.body.classList.remove("navopen"); }
+$("#menuBtn").addEventListener("click", () => document.body.classList.toggle("navopen"));
+
+const NAV_ITEMS_MAP = {};
+let navHTML = "";
+NAV_GROUPS.forEach(g => {
+  navHTML += `<div class="nav-section-title">${g.title}</div>`;
+  g.items.forEach(([k, l, icon]) => {
+    NAV_ITEMS_MAP[k] = l;
+    navHTML += `<button data-go="${k}">${icon}<span>${l}</span></button>`;
+  });
+});
+$("#nav").innerHTML = navHTML;
+
+$("#breachBtn").addEventListener("click", () => { closeNav(); go("breach"); });
+$("#creditFoot").innerHTML = `${CREDIT} · <a href="mailto:${EMAIL}">${EMAIL}</a> · <a href="${LINKEDIN}" target="_blank" rel="noopener">LinkedIn</a>`;
+
+window.toggleTheme = function() {
+  const cur = document.body.getAttribute('data-theme') || 'light';
+  const next = cur === 'light' ? 'dark' : 'light';
+  applyTheme(next);
+  localStorage.setItem('dpdp_suite_theme', next);
+};
+function applyTheme(t) {
+  document.body.setAttribute('data-theme', t);
+  const icon = $("#themeIcon");
+  if (!icon) return;
+  if (t === 'dark') {
+    icon.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor" stroke="none"/>';
+  } else {
+    icon.innerHTML = `<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+      <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>`;
+  }
+}
+applyTheme(localStorage.getItem('dpdp_suite_theme') || 'light');
+
+go("home");
+})();
+</script>
+</body>
+</html>
